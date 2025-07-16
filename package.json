@@ -5,7 +5,7 @@
 	"homepage": "https://Pratish10.github.io/portfolio",
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && next export",
+		"build": "next build",
 		"start": "next start",
 		"lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
 		"lint:fix": "eslint . --ext ts,tsx,js,jsx --fix",
