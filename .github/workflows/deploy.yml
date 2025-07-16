@@ -31,11 +31,11 @@ jobs:
       - name: Install pnpm
         run: npm i -g pnpm
 
-      - name: formatting through prettier
-        run: pnpm run format
-
       - name: Install dependencies
         run: pnpm install
+
+      - name: formatting through prettier
+        run: pnpm run format
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
