@@ -2,7 +2,6 @@ import { PortfolioData } from '@/types/portfolio-types';
 import { useEffect, useState } from 'react';
 
 export const useGetProfileInfo = () => {
-	const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 	const [portfolio, setPortfolio] = useState<PortfolioData | null>(null);
 	const [error, setError] = useState<string>('');
 	const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -10,8 +9,7 @@ export const useGetProfileInfo = () => {
 	useEffect(() => {
 		const fetchProfile = async () => {
 			try {
-				const url = `${basePath}/pratish.json`;
-				const response = await fetch(url);
+				const response = await fetch('pratish.json');
 				if (!response.ok) throw new Error(`HTTP ${response.status}`);
 				const data: PortfolioData = await response.json();
 				setPortfolio(data);
@@ -24,7 +22,7 @@ export const useGetProfileInfo = () => {
 
 		const timer = setTimeout(fetchProfile, 2000);
 		return () => clearTimeout(timer);
-	}, [basePath]);
+	}, []);
 
 	return { portfolio, error, isLoading };
 };
