@@ -23,6 +23,11 @@
       "platform": "Twitter",
       "url": "https://x.com/Pratish1086241",
       "icon": "Twitter"
+    },
+    {
+      "platform": "Substack",
+      "url": "https://pratishninawe.substack.com/",
+      "icon": "Bookmark"
     }
   ],
   "experience": [

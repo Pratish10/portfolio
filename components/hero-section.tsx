@@ -2,7 +2,7 @@
 'use client';
 
 import { motion, easeOut } from 'motion/react';
-import { Download, Github, Linkedin, Twitter, Mail, MapPin } from 'lucide-react';
+import { Download, Github, Linkedin, Twitter, MapPin, Bookmark } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface Personal {
@@ -31,7 +31,7 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 		Github,
 		Linkedin,
 		Twitter,
-		Mail,
+		Bookmark,
 	};
 
 	const containerVariants = {
@@ -88,7 +88,6 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 			className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-950 px-4 sm:px-6 lg:px-8'
 		>
 			<motion.div className='max-w-4xl mx-auto text-center' variants={containerVariants} initial='hidden' animate='visible'>
-				{/* Profile Image */}
 				<motion.div className='mb-8' variants={imageVariants}>
 					<div className='relative inline-block'>
 						<motion.img
@@ -101,25 +100,21 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 					</div>
 				</motion.div>
 
-				{/* Location */}
 				<motion.div className='flex items-center justify-center mb-6 text-gray-600 dark:text-gray-400' variants={itemVariants}>
 					<MapPin className='w-4 h-4 mr-2' />
 					<span className='text-sm font-medium'>{personal.location}</span>
 				</motion.div>
 
-				{/* Title */}
 				<motion.h1 className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6' variants={itemVariants}>
 					<span className='bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent'>
 						Hi, I&apos;m {personal.firstName}
 					</span>
 				</motion.h1>
 
-				{/* Subtitle */}
 				<motion.h2 className='text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-8' variants={itemVariants}>
 					{personal.title}
 				</motion.h2>
 
-				{/* Introduction */}
 				<motion.p
 					className='text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12'
 					variants={itemVariants}
@@ -127,7 +122,6 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 					{personal.about}
 				</motion.p>
 
-				{/* CTA Buttons */}
 				<motion.div className='flex flex-col sm:flex-row gap-4 justify-center items-center mb-12' variants={buttonVariants}>
 					<motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
 						<Button
@@ -143,7 +137,6 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 					</motion.div>
 				</motion.div>
 
-				{/* Social Links */}
 				<motion.div className='flex justify-center space-x-6' variants={itemVariants}>
 					{socialLinks.map((social, index) => {
 						const Icon = iconMap[social.icon];
@@ -163,7 +156,6 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 								<Icon className='w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300' />
 								<span className='sr-only'>{social.platform}</span>
 
-								{/* Tooltip */}
 								<div className='absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none'>
 									{social.platform}
 								</div>
