@@ -28,14 +28,21 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
 
       - name: Install dependencies
         run: pnpm install
 
-      - name: Prettier formatting check
+      - name: Prettier formatting check (optional)
         run: pnpm run format
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
 
       - name: Build static site using Next.js
         run: pnpm run build
