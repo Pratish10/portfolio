@@ -1,0 +1,162 @@
+{
+  "personal": {
+    "firstName": "Pratish",
+    "lastName": "Ninawe",
+    "title": "Software Engineer",
+    "location": "Bengaluru, Karnataka",
+    "about": "I'm a passionate full-stack developer with 2+ years of experience creating beautiful, functional, and user-centered digital experiences. I specialize in modern web technologies and have a keen eye for design. My goal is to bridge the gap between technical excellence and exceptional user experience.",
+    "profileImage": "./Pratish.webp",
+    "resumeLink": "/resume-pratish-kumar.pdf"
+  },
+  "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/Pratish10",
+      "icon": "Github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pratish-ninawe-6199b2220/",
+      "icon": "Linkedin"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://x.com/Pratish1086241",
+      "icon": "Twitter"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Celstream Technologies",
+      "position": "Software Engineer",
+      "duration": "Nov 2023 - Present",
+      "location": "Bengaluru, Karnataka",
+      "description": "Lead development of scalable web applications using React, Node.js, and AWS. Mentored junior developers and improved team productivity by 40%.",
+      "technologies": ["React", "Javascript", "TypeScript", "Azure Devops", "Python", "Flask", "AWS"],
+      "achievements": [
+        "Implemented interactive diagramming features using GoJS in a React-based system, building 50K+ custom node/link templates with drag-and-drop, zoom/pan, and real-time updates, improving user task efficiency by 40%.",
+        "Integrated RESTful APIs with advanced error state handling and retry mechanisms.",
+        "Mentored 2 interns, accelerating onboarding and enabling them to ship production-ready code within 2 weeks.",
+        "Architected and led a performance-critical feature for a high-traffic application, achieving 25% faster load times and zero post-deployment rollbacks.",
+        "Designed a real-time visualization dashboard using advanced optimization techniques like code-splitting, lazy loading, and CDN caching, improving page load speeds by 50%.",
+        "Developed Flask-based backend services with in-memory data handling mimicking Redis behavior, reducing API response times by 90%."
+      ]
+    },
+    {
+      "id": 2,
+      "company": "Neonflake",
+      "position": "Software Engineer Intern",
+      "duration": "Sept 2023 - Nov 2023",
+      "location": "Remote",
+      "description": "Contributed as a Full Stack Developer intern to build a complete e-commerce web application from scratch based on Figma designs. Focused on delivering responsive frontend and high-performance backend architecture with secure authentication.",
+      "technologies": ["React", "TypeScript", "JavaScript", "Node.js", "Express.js", "MongoDB", "Redis", "JWT"],
+      "achievements": [
+        "Designed and developed a fully functional e-commerce platform from Figma designs using React.js and TypeScript",
+        "Built secure and scalable backend APIs using Node.js, Express.js, MongoDB, and JWT-based authentication",
+        "Implemented Redis caching with eviction policy to support stateful backend, improving API response time by 95%+",
+        "Delivered a fully responsive frontend interface across desktop and mobile devices",
+        "Improved user engagement by 35% through intuitive design and performance optimizations",
+        "Integrated modern UI/UX design systems to align with current web standards"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "E-Commerce Platform",
+      "description": "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
+      "image": "/placeholder.svg?height=300&width=400",
+      "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
+      "liveUrl": "https://ecommerce-demo.com",
+      "githubUrl": "https://github.com/pratishkumar/ecommerce-platform",
+      "featured": true,
+      "category": "Full Stack"
+    },
+    {
+      "id": 2,
+      "title": "Task Management App",
+      "description": "A collaborative task management application with real-time updates and team collaboration features.",
+      "image": "/placeholder.svg?height=300&width=400",
+      "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
+      "liveUrl": "https://taskmanager-demo.com",
+      "githubUrl": "https://github.com/pratishkumar/task-manager",
+      "featured": true,
+      "category": "Full Stack"
+    },
+    {
+      "id": 3,
+      "title": "Weather Dashboard",
+      "description": "A beautiful weather dashboard with location-based forecasts and interactive charts.",
+      "image": "/placeholder.svg?height=300&width=400",
+      "technologies": ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
+      "liveUrl": "https://weather-dashboard-demo.com",
+      "githubUrl": "https://github.com/pratishkumar/weather-dashboard",
+      "featured": false,
+      "category": "Frontend"
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio website built with modern technologies and smooth animations.",
+      "image": "/placeholder.svg?height=300&width=400",
+      "technologies": ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
+      "liveUrl": "https://pratishkumar.dev",
+      "githubUrl": "https://github.com/pratishkumar/portfolio",
+      "featured": false,
+      "category": "Frontend"
+    }
+  ],
+  "skills": [
+  { "name": "React.js", "icon": "⚛️", "color": "sky" },
+  { "name": "Next.js", "icon": "⬛", "color": "zinc" },
+  { "name": "TypeScript", "icon": "🔷", "color": "blue" },
+  { "name": "JavaScript", "icon": "✨", "color": "yellow" },
+  { "name": "Node.js", "icon": "🌿", "color": "green" },
+  { "name": "Python", "icon": "🐍", "color": "indigo" },
+  { "name": "Express.js", "icon": "🚌", "color": "gray" },
+  { "name": "PostgreSQL", "icon": "🐘", "color": "cyan" },
+  { "name": "MongoDB", "icon": "🍃", "color": "emerald" },
+  { "name": "REST APIs", "icon": "🔗", "color": "neutral" },
+  { "name": "HTML5", "icon": "🌐", "color": "orange" },
+  { "name": "CSS3", "icon": "🎨", "color": "blue" },
+  { "name": "Git", "icon": "🔧", "color": "red" },
+  { "name": "Docker", "icon": "🐳", "color": "blue" },
+  { "name": "Azure Devops", "icon": "☁️", "color": "blue" },
+  { "name": "OOPs", "icon": "🏗️", "color": "purple" },
+  { "name": "Data Structures and Algorithms", "icon": "🧮", "color": "teal" }
+],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "AWS Certified Developer - Associate",
+      "issuer": "Amazon Web Services",
+      "date": "2023",
+      "credentialId": "AWS-DEV-2023-001",
+      "image": "/placeholder.svg?height=100&width=100",
+      "verifyUrl": "https://aws.amazon.com/verification"
+    },
+    {
+      "id": 2,
+      "title": "Google Cloud Professional Developer",
+      "issuer": "Google Cloud",
+      "date": "2022",
+      "credentialId": "GCP-DEV-2022-002",
+      "image": "/placeholder.svg?height=100&width=100",
+      "verifyUrl": "https://cloud.google.com/certification"
+    },
+    {
+      "id": 3,
+      "title": "Meta Frontend Developer Certificate",
+      "issuer": "Meta",
+      "date": "2021",
+      "credentialId": "META-FE-2021-003",
+      "image": "/placeholder.svg?height=100&width=100",
+      "verifyUrl": "https://coursera.org/verify"
+    }
+  ],
+  "contact": {
+    "email": "pratish.1006@gmail.com",
+    "phone": "+91 9179476460"
+  }
+}
