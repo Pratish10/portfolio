@@ -27,12 +27,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'pnpm'
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
+      - name: Install pnpm
+        run: npm i -g pnpm
 
       - name: formatting through prettier
         run: pnpm run format
@@ -46,7 +43,7 @@ jobs:
           static_site_generator: next
 
       - name: Build & Export
-        run: pnpm run build   # Make sure your build script runs `next build && next export`
+        run: pnpm run build
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
