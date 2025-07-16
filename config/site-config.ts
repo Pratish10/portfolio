@@ -1,8 +1,8 @@
 import { type Metadata } from 'next';
 
-const TITLE = 'Pratish Kumar | Software Engineer';
+const TITLE = 'Pratish Ninawe | Software Engineer';
 const DESCRIPTION =
-	"I'm Pratish Kumar — a Full Stack Developer and UI/UX Designer crafting modern, scalable web applications. Explore my work, skills, projects, and career journey in frontend, backend, and cloud technologies.";
+	"I'm Pratish Ninawe — a Full Stack Developer and UI/UX Designer crafting modern, scalable web applications. Explore my work, skills, projects, and career journey in frontend, backend, and cloud technologies.";
 
 const BASE_URL = 'https://pratish10.github.io/portfolio';
 
@@ -12,7 +12,7 @@ export const siteConfig: Metadata = {
 	applicationName: 'Pratish Portfolio',
 	metadataBase: new URL(BASE_URL),
 	keywords: [
-		'Pratish Kumar',
+		'Pratish Ninawe',
 		'Full Stack Developer',
 		'Frontend Engineer',
 		'Backend Developer',
@@ -25,19 +25,19 @@ export const siteConfig: Metadata = {
 		'MERN Stack',
 		'Portfolio Website',
 	],
-	creator: 'Pratish Kumar',
-	authors: [{ name: 'Pratish Kumar', url: BASE_URL }],
+	creator: 'Pratish Ninawe',
+	authors: [{ name: 'Pratish Ninawe', url: BASE_URL }],
 	openGraph: {
 		title: TITLE,
 		description: DESCRIPTION,
 		url: BASE_URL,
-		siteName: 'Pratish Kumar | Developer Portfolio',
+		siteName: 'Pratish Ninawe | Developer Portfolio',
 		images: [
 			{
 				url: `${BASE_URL}/Pratish.webp`,
 				width: 1200,
 				height: 630,
-				alt: 'Pratish Kumar Portfolio Preview',
+				alt: 'Pratish Ninawe Portfolio Preview',
 			},
 		],
 		locale: 'en_US',
