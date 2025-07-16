@@ -2,7 +2,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { RefreshCw, AlertTriangle, Home, Mail } from 'lucide-react';
+import { RefreshCw, AlertTriangle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -20,21 +20,11 @@ const ErrorFallback = ({ error, onRetry }: ErrorFallbackProps) => {
 		}
 	};
 
-	const handleGoHome = () => {
-		window.location.href = '/';
-	};
-
-	const handleContactSupport = () => {
-		window.location.href =
-			'mailto:pratish.kumar@example.com?subject=Portfolio Error Report&body=I encountered an error while viewing your portfolio.';
-	};
-
 	return (
 		<div className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-950 px-4'>
 			<motion.div className='max-w-md w-full' initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
 				<Card className='shadow-2xl border-0'>
 					<CardContent className='p-8 text-center'>
-						{/* Error Icon */}
 						<motion.div
 							className='w-20 h-20 bg-red-100 dark:bg-red-900/20 rounded-full flex items-center justify-center mx-auto mb-6'
 							initial={{ scale: 0 }}
@@ -44,7 +34,6 @@ const ErrorFallback = ({ error, onRetry }: ErrorFallbackProps) => {
 							<AlertTriangle className='w-10 h-10 text-red-500' />
 						</motion.div>
 
-						{/* Error Title */}
 						<motion.h1
 							className='text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4'
 							initial={{ opacity: 0 }}
@@ -54,7 +43,6 @@ const ErrorFallback = ({ error, onRetry }: ErrorFallbackProps) => {
 							Oops! Something went wrong
 						</motion.h1>
 
-						{/* Error Description */}
 						<motion.p
 							className='text-gray-600 dark:text-gray-400 mb-6 leading-relaxed'
 							initial={{ opacity: 0 }}
@@ -64,7 +52,6 @@ const ErrorFallback = ({ error, onRetry }: ErrorFallbackProps) => {
 							We&apos;re having trouble loading the portfolio data. This might be a temporary issue.
 						</motion.p>
 
-						{/* Error Details (if available) */}
 						{error && (
 							<motion.div
 								className='bg-gray-50 dark:bg-gray-800 rounded-lg p-4 mb-6 text-left'
@@ -78,7 +65,6 @@ const ErrorFallback = ({ error, onRetry }: ErrorFallbackProps) => {
 							</motion.div>
 						)}
 
-						{/* Action Buttons */}
 						<motion.div
 							className='space-y-3'
 							initial={{ opacity: 0 }}
@@ -93,21 +79,8 @@ const ErrorFallback = ({ error, onRetry }: ErrorFallbackProps) => {
 								<RefreshCw className='w-5 h-5 mr-2' />
 								Try Again
 							</Button>
-
-							<div className='flex gap-3'>
-								<Button onClick={handleGoHome} variant='outline' size='lg' className='flex-1 bg-transparent'>
-									<Home className='w-4 h-4 mr-2' />
-									Home
-								</Button>
-
-								<Button onClick={handleContactSupport} variant='outline' size='lg' className='flex-1 bg-transparent'>
-									<Mail className='w-4 h-4 mr-2' />
-									Contact
-								</Button>
-							</div>
 						</motion.div>
 
-						{/* Help Text */}
 						<motion.p
 							className='text-sm text-gray-500 dark:text-gray-400 mt-6'
 							initial={{ opacity: 0 }}

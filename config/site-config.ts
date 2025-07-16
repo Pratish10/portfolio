@@ -4,7 +4,7 @@ const TITLE = 'Pratish Kumar | Software Engineer';
 const DESCRIPTION =
 	"I'm Pratish Kumar — a Full Stack Developer and UI/UX Designer crafting modern, scalable web applications. Explore my work, skills, projects, and career journey in frontend, backend, and cloud technologies.";
 
-const BASE_URL = 'https://pratishkumar.dev';
+const BASE_URL = 'https://pratish10.github.io/portfolio';
 
 export const siteConfig: Metadata = {
 	title: TITLE,
