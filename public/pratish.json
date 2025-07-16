@@ -4,9 +4,9 @@
     "lastName": "Ninawe",
     "title": "Software Engineer",
     "location": "Bengaluru, Karnataka",
-    "about": "I'm a passionate full-stack developer with 2+ years of experience creating beautiful, functional, and user-centered digital experiences. I specialize in modern web technologies and have a keen eye for design. My goal is to bridge the gap between technical excellence and exceptional user experience.",
+    "about": "I’m a versatile full‑stack Software Engineer based in Bengaluru with over two years of hands‑on experience building scalable, user‑centered web applications. At Celstream Technologies, I’ve led the development of high‑traffic React/Node.js solutions on AWS—delivering performance‑critical features that cut load times by 25%, architecting real‑time dashboards that improved page speed by 50%, and mentoring junior developers to ship production‑ready code in record time. During my internship at Neonflake, I designed and implemented a secure, full‑featured e‑commerce platform from Figma wireframes, leveraging Redis caching for a 95%+ API speedup and crafting a fully responsive UI that boosted user engagement by 35%. Outside of work, I’ve built “QR Dine,” a Next.js and Stripe–powered restaurant SaaS, and an Expense Tracker using the MERN stack and Redux to help users manage finances intuitively. I’m comfortable across modern web ecosystems (React, Next.js, TypeScript, Node.js, Python/Flask) and backed by Udemy’s “React – The Complete Guide” and Lyft’s backend virtual experience certification. Whether optimizing CDNs and code‑splitting for lightning‑fast experiences or architecting microservices with JWT‑secure APIs and in‑memory data handling, I’m passionate about bridging technical excellence with elegant, user‑focused design.",
     "profileImage": "./Pratish.webp",
-    "resumeLink": "/resume-pratish-kumar.pdf"
+    "resumeLink": "https://docs.google.com/document/d/11dSCxeD7p5ydPSoxJ_0Kui2vFl-oW4RklmYUXuL9DpA/edit?usp=sharing"
   },
   "socialLinks": [
     {
@@ -69,45 +69,31 @@
   "projects": [
     {
       "id": 1,
-      "title": "E-Commerce Platform",
-      "description": "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard.",
-      "image": "/placeholder.svg?height=300&width=400",
+      "title": "Q R Dine",
+      "description": "QR Dine is a SaaS-based platform that revolutionizes the restaurant dining experience by allowing customers to scan a unique QR code placed on each table to view the menu, place orders, and interact with the restaurant directly from their mobile devices. Restaurant owners can manage multiple branches, tables, menus, and categories through the admin portal, while customers can seamlessly place orders via the client portal.",
       "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
-      "liveUrl": "https://ecommerce-demo.com",
-      "githubUrl": "https://github.com/pratishkumar/ecommerce-platform",
-      "featured": true,
+      "liveUrl": "https://qr-dine.vercel.app/",
+      "githubUrl": "https://github.com/Pratish10/qr-dine",
+      "featured": false,
       "category": "Full Stack"
     },
     {
       "id": 2,
-      "title": "Task Management App",
-      "description": "A collaborative task management application with real-time updates and team collaboration features.",
-      "image": "/placeholder.svg?height=300&width=400",
-      "technologies": ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
-      "liveUrl": "https://taskmanager-demo.com",
-      "githubUrl": "https://github.com/pratishkumar/task-manager",
-      "featured": true,
+      "title": "Expense Tracker App",
+      "description": "Expense Tracker App a financial management application utilizing the MERN stack and Redux. This app empowers users to effortlessly manage their finances, understand spending patterns, and make informed financial decisions.",
+      "technologies": ["React", "Node.js", "Redux", "MongoDB", "Material-UI"],
+      "liveUrl": "https://expense-tracker-app-eta-lilac.vercel.app/",
+      "githubUrl": "https://github.com/Pratish10/Expense-Tracker-App",
+      "featured": false,
       "category": "Full Stack"
     },
     {
       "id": 3,
-      "title": "Weather Dashboard",
-      "description": "A beautiful weather dashboard with location-based forecasts and interactive charts.",
-      "image": "/placeholder.svg?height=300&width=400",
-      "technologies": ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
-      "liveUrl": "https://weather-dashboard-demo.com",
-      "githubUrl": "https://github.com/pratishkumar/weather-dashboard",
-      "featured": false,
-      "category": "Frontend"
-    },
-    {
-      "id": 4,
-      "title": "Portfolio Website",
-      "description": "A responsive portfolio website built with modern technologies and smooth animations.",
-      "image": "/placeholder.svg?height=300&width=400",
-      "technologies": ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript"],
-      "liveUrl": "https://pratishkumar.dev",
-      "githubUrl": "https://github.com/pratishkumar/portfolio",
+      "title": "Skill packers",
+      "description": "Created a landing page for the packaging company. Heavily based on the SEO",
+      "technologies": ["Next.js", "Typescript", "Javascript", "DNS"],
+      "liveUrl": "https://www.skillpackers.in/",
+      "githubUrl": "https://github.com/Pratish10/skill-packers",
       "featured": false,
       "category": "Frontend"
     }
@@ -134,30 +120,21 @@
   "certifications": [
     {
       "id": 1,
-      "title": "AWS Certified Developer - Associate",
-      "issuer": "Amazon Web Services",
-      "date": "2023",
-      "credentialId": "AWS-DEV-2023-001",
-      "image": "/placeholder.svg?height=100&width=100",
-      "verifyUrl": "https://aws.amazon.com/verification"
+      "title": "React - The Complete Guide 2023",
+      "issuer": "Udemy",
+      "date": "Oct 2023",
+      "credentialId": "UC-b0084af5-da7c-475f-8d8d-29e218fd64dd",
+      "image": "https://udemy-certificate.s3.amazonaws.com/image/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd.jpg?v=1697305953000",
+      "verifyUrl": "https://www.udemy.com/certificate/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd/"
     },
     {
       "id": 2,
-      "title": "Google Cloud Professional Developer",
-      "issuer": "Google Cloud",
-      "date": "2022",
-      "credentialId": "GCP-DEV-2022-002",
-      "image": "/placeholder.svg?height=100&width=100",
-      "verifyUrl": "https://cloud.google.com/certification"
-    },
-    {
-      "id": 3,
-      "title": "Meta Frontend Developer Certificate",
-      "issuer": "Meta",
-      "date": "2021",
-      "credentialId": "META-FE-2021-003",
-      "image": "/placeholder.svg?height=100&width=100",
-      "verifyUrl": "https://coursera.org/verify"
+      "title": "LYFT Backend Engineering Virtual Experience Program",
+      "issuer": "LYFT",
+      "date": "2023",
+      "credentialId": "mgXLGq53TAMwHvKhK",
+      "image": "https://cdn-assets.theforage.com/images/forage-schema-logo.png",
+      "verifyUrl": "https://drive.google.com/file/d/1ndlbHZDNKPqorKwPloXyzNudWz_e-4YX/view?usp=sharing"
     }
   ],
   "contact": {

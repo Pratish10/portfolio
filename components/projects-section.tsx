@@ -71,11 +71,6 @@ const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
 						<motion.div key={project.id} variants={itemVariants}>
 							<Card className='group overflow-hidden hover:shadow-2xl transition-all duration-300 h-full'>
 								<div className='relative overflow-hidden'>
-									<img
-										src={project.image || '/placeholder.svg'}
-										alt={project.title}
-										className='w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300'
-									/>
 									{project.featured && (
 										<div className='absolute top-4 left-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center'>
 											<Star className='w-4 h-4 mr-1' />
@@ -104,21 +99,25 @@ const ProjectsSection = ({ projects }: ProjectsSectionProps) => {
 									</div>
 
 									<div className='flex gap-4'>
-										<Button
-											asChild
-											className='flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700'
-										>
-											<a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
-												<ExternalLink className='w-4 h-4 mr-2' />
-												Live Demo
-											</a>
-										</Button>
-										<Button variant='outline' asChild className='flex-1 bg-transparent'>
-											<a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>
-												<Github className='w-4 h-4 mr-2' />
-												Code
-											</a>
-										</Button>
+										{project.liveUrl && (
+											<Button
+												asChild
+												className='flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700'
+											>
+												<a href={project.liveUrl} target='_blank' rel='noopener noreferrer'>
+													<ExternalLink className='w-4 h-4 mr-2' />
+													Live Demo
+												</a>
+											</Button>
+										)}
+										{project.githubUrl && (
+											<Button variant='outline' asChild className='flex-1 bg-transparent'>
+												<a href={project.githubUrl} target='_blank' rel='noopener noreferrer'>
+													<Github className='w-4 h-4 mr-2' />
+													Code
+												</a>
+											</Button>
+										)}
 									</div>
 								</CardContent>
 							</Card>
