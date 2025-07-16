@@ -90,7 +90,7 @@
     {
       "id": 3,
       "title": "Skill packers",
-      "description": "Created a landing page for the packaging company. Heavily based on the SEO",
+      "description": "Developed and deployed a static website for Skill Packers, a Bengaluru-based manufacturing company specializing in wooden pallets and packaging solutions. Designed a responsive and user-friendly interface to enhance the company’s online presence.",
       "technologies": ["Next.js", "Typescript", "Javascript", "DNS"],
       "liveUrl": "https://www.skillpackers.in/",
       "githubUrl": "https://github.com/Pratish10/skill-packers",
