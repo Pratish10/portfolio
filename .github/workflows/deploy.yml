@@ -4,6 +4,12 @@ name: Deploy Pratish Portfolio to GitHub Pages
 on:
   push:
     branches: [master]
+    paths:
+      - 'public/**'
+      - '**.ts'
+      - '**.tsx'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
   workflow_dispatch:
 
 permissions:
