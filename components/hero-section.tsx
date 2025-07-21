@@ -87,7 +87,7 @@ const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
 			id='pratish'
 			className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-950 px-4 sm:px-6 lg:px-8'
 		>
-			<motion.div className='max-w-4xl mx-auto text-center' variants={containerVariants} initial='hidden' animate='visible'>
+			<motion.div className='max-w-4xl mx-auto text-center my-10' variants={containerVariants} initial='hidden' animate='visible'>
 				<motion.div className='mb-8' variants={imageVariants}>
 					<div className='relative inline-block'>
 						<motion.img
