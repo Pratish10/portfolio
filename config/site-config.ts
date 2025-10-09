@@ -14,6 +14,7 @@ export const siteConfig: Metadata = {
 	keywords: [
 		'Pratish Ninawe',
 		'Full Stack Developer',
+		'Full Stack Engineer',
 		'Frontend Engineer',
 		'Backend Developer',
 		'React Developer',

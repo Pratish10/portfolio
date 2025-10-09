@@ -33,9 +33,24 @@
   "experience": [
     {
       "id": 1,
+      "company": "Qwalton Private Limited",
+      "position": "Full Stack Engineer",
+      "duration": "Sept 2025 - Present",
+      "location": "Bengaluru, Karnataka",
+      "description": "Lead development of scalable web applications using React, Node.js, and AWS. Mentored junior developers and improved team productivity by 40%.",
+      "technologies": ["React", "Javascript", "TypeScript", "Express.js", "MongoDB"],
+      "achievements": [
+        "Maintain and enhance MYALGOAI, an AI-powered trading platform empowering retail investors with automated trading strategies.",
+        "Develop scalable web applications using the MERN stack (MongoDB, Express, React, Node.js).",
+        "Implement real-time data integrations and optimize backend performance for seamless trading execution.",
+        "Focus on automation, scalability, and fintech innovation to deliver high-performance solutions."
+      ]
+    },
+    {
+      "id": 2,
       "company": "Celstream Technologies",
       "position": "Software Engineer",
-      "duration": "Nov 2023 - Present",
+      "duration": "Nov 2023 - Sept 2025",
       "location": "Bengaluru, Karnataka",
       "description": "Lead development of scalable web applications using React, Node.js, and AWS. Mentored junior developers and improved team productivity by 40%.",
       "technologies": ["React", "Javascript", "TypeScript", "Azure Devops", "Python", "Flask", "AWS"],
@@ -49,7 +64,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "company": "Neonflake",
       "position": "Software Engineer Intern",
       "duration": "Sept 2023 - Nov 2023",
