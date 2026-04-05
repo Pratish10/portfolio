@@ -1,57 +1,73 @@
+﻿export interface CtaLink {
+	label: string;
+	href: string;
+}
+
 export interface PortfolioData {
 	personal: {
+		fullName: string;
 		firstName: string;
 		lastName: string;
 		title: string;
 		location: string;
-		about: string;
+		summary: string;
+		availability: string;
 		profileImage: string;
 		resumeLink: string;
+	};
+	cta: {
+		primary: CtaLink;
+		secondary: CtaLink;
+		tertiary: CtaLink;
+	};
+	impactStats: {
+		label: string;
+		value: string;
+	}[];
+	experiences: {
+		id: number;
+		company: string;
+		role: string;
+		duration: string;
+		location: string;
+		summary: string;
+		bullets: string[];
+		stack: string[];
+	}[];
+	projects: {
+		id: number;
+		name: string;
+		tag: string;
+		summary: string;
+		highlights: string[];
+		links: CtaLink[];
+	}[];
+	capabilityGroups: {
+		title: string;
+		items: string[];
+	}[];
+	certifications: {
+		id: number;
+		title: string;
+		issuer: string;
+		date: string;
+		href: string;
+	}[];
+	recognition: string[];
+	education: {
+		school: string;
+		degree: string;
+		duration: string;
+		score: string;
 	};
 	socialLinks: {
 		platform: string;
 		url: string;
 		icon: string;
 	}[];
-	experience: {
-		id: number;
-		company: string;
-		position: string;
-		duration: string;
-		location: string;
-		description: string;
-		technologies: string[];
-		achievements: string[];
-	}[];
-	projects: {
-		id: number;
+	seo: {
 		title: string;
 		description: string;
-		image: string;
-		technologies: string[];
-		liveUrl: string;
-		githubUrl: string;
-		featured: boolean;
-		category: string;
-	}[];
-	skills: Skill[];
-	certifications: {
-		id: number;
-		title: string;
-		issuer: string;
-		date: string;
-		credentialId: string;
-		image: string;
-		verifyUrl: string;
-	}[];
-	contact: {
-		email: string;
-		phone: string;
+		keywords: string[];
 	};
-}
-
-export interface Skill {
-	name: string;
-	icon: string;
-	color: string;
 }

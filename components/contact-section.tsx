@@ -1,57 +1,31 @@
-'use client';
+﻿import { Button } from '@/components/ui/button';
+import SectionHeading from '@/components/section-heading';
+import type { PortfolioData } from '@/types/portfolio-types';
 
-import { motion, easeOut } from 'motion/react';
-import { Button } from '@/components/ui/button';
-
-const ContactSection = ({ email }: { email: string }) => {
-	const containerVariants = {
-		hidden: { opacity: 0 },
-		visible: {
-			opacity: 1,
-			transition: {
-				staggerChildren: 0.2,
-			},
-		},
-	};
-
-	const itemVariants = {
-		hidden: { y: 50, opacity: 0 },
-		visible: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				duration: 0.6,
-				ease: easeOut,
-			},
-		},
-	};
-
-	const handleEmailClick = () => {
-		window.location.href = `mailto:${email}`;
-	};
-
+const ContactSection = ({ cta }: { cta: PortfolioData['cta'] }) => {
 	return (
-		<section id='contact' className='py-20 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-950'>
-			<div className='max-w-4xl mx-auto px-4 sm:px-6 lg:px-8'>
-				<motion.div
-					className='max-w-2xl mx-auto'
-					variants={containerVariants}
-					initial='hidden'
-					whileInView='visible'
-					viewport={{ once: true }}
-				>
-					<motion.div variants={itemVariants}>
-						<motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className='w-full'>
-							<Button
-								onClick={handleEmailClick}
-								size='lg'
-								className='w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 text-lg'
-							>
-								{email}
-							</Button>
-						</motion.div>
-					</motion.div>
-				</motion.div>
+		<section id='contact' className='mx-auto max-w-6xl px-5 py-16 sm:px-6 lg:px-8'>
+			<div className='rounded-[2rem] border border-white/10 bg-white/5 p-8 sm:p-10'>
+				<SectionHeading
+					eyebrow='Next Step'
+					title='Built for recruiter handoff'
+					description='If the role values backend systems, cloud exposure, and full-stack delivery, the fastest path is to grab the resume or reach out directly.'
+				/>
+				<div className='flex flex-col gap-3 sm:flex-row sm:flex-wrap'>
+					<Button asChild size='lg' className='rounded-full'>
+						<a href={cta.primary.href} target='_blank' rel='noreferrer'>
+							{cta.primary.label}
+						</a>
+					</Button>
+					<Button asChild size='lg' variant='outline' className='rounded-full bg-transparent'>
+						<a href={cta.secondary.href}>{cta.secondary.label}</a>
+					</Button>
+					<Button asChild size='lg' variant='ghost' className='rounded-full'>
+						<a href={cta.tertiary.href} target='_blank' rel='noreferrer'>
+							{cta.tertiary.label}
+						</a>
+					</Button>
+				</div>
 			</div>
 		</section>
 	);

@@ -1,122 +1,47 @@
-'use client';
+﻿import SectionHeading from '@/components/section-heading';
+import type { PortfolioData } from '@/types/portfolio-types';
 
-import { motion, easeOut } from 'motion/react';
-import { MapPin, Calendar, Award } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-
-interface Experience {
-	id: number;
-	company: string;
-	position: string;
-	duration: string;
-	location: string;
-	description: string;
-	technologies: string[];
-	achievements: string[];
-}
-
-interface ExperienceSectionProps {
-	experiences: Experience[];
-}
-
-const ExperienceSection = ({ experiences }: ExperienceSectionProps) => {
-	const containerVariants = {
-		hidden: { opacity: 0 },
-		visible: {
-			opacity: 1,
-			transition: {
-				staggerChildren: 0.2,
-			},
-		},
-	};
-
-	const itemVariants = {
-		hidden: { y: 50, opacity: 0 },
-		visible: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				duration: 0.6,
-				ease: easeOut,
-			},
-		},
-	};
-
+const ExperienceSection = ({ experiences }: { experiences: PortfolioData['experiences'] }) => {
 	return (
-		<section id='experience' className='py-20 bg-gray-50 dark:bg-gray-900'>
-			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-				<motion.div
-					className='text-center mb-16'
-					initial={{ opacity: 0, y: 30 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.6 }}
-					viewport={{ once: true }}
-				>
-					<h2 className='text-4xl md:text-5xl font-bold bg-gradient-to-r from-gray-900 to-blue-800 dark:from-white dark:to-blue-200 bg-clip-text text-transparent mb-4'>
-						Work Experience
-					</h2>
-					<p className='text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>
-						My professional journey and the impact I&apos;ve made
-					</p>
-				</motion.div>
-
-				<motion.div className='space-y-8' variants={containerVariants} initial='hidden' whileInView='visible' viewport={{ once: true }}>
-					{experiences.map((exp) => (
-						<motion.div key={exp.id} variants={itemVariants}>
-							<Card className='overflow-hidden hover:shadow-xl transition-all duration-300 border-l-4 border-l-blue-500'>
-								<CardContent className='p-8'>
-									<div className='flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6'>
-										<div className='flex-1'>
-											<h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-2'>{exp.position}</h3>
-											<h4 className='text-xl font-semibold text-blue-600 dark:text-blue-400 mb-4'>{exp.company}</h4>
-										</div>
-										<div className='flex flex-col sm:flex-row gap-4 text-sm text-gray-600 dark:text-gray-400'>
-											<div className='flex items-center'>
-												<Calendar className='w-4 h-4 mr-2' />
-												{exp.duration}
-											</div>
-											<div className='flex items-center'>
-												<MapPin className='w-4 h-4 mr-2' />
-												{exp.location}
-											</div>
-										</div>
-									</div>
-
-									<p className='text-gray-700 dark:text-gray-300 mb-6 leading-relaxed'>{exp.description}</p>
-
-									<div className='mb-6'>
-										<h5 className='font-semibold text-gray-900 dark:text-white mb-3 flex items-center'>
-											<Award className='w-4 h-4 mr-2' />
-											Key Achievements
-										</h5>
-										<ul className='space-y-2'>
-											{exp.achievements.map((achievement, idx) => (
-												<li key={idx} className='flex items-start'>
-													<span className='w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0'></span>
-													<span className='text-gray-700 dark:text-gray-300'>{achievement}</span>
-												</li>
-											))}
-										</ul>
-									</div>
-
-									<div>
-										<h5 className='font-semibold text-gray-900 dark:text-white mb-3'>Technologies</h5>
-										<div className='flex flex-wrap gap-2'>
-											{exp.technologies.map((tech, idx) => (
-												<span
-													key={idx}
-													className='px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium'
-												>
-													{tech}
-												</span>
-											))}
-										</div>
-									</div>
-								</CardContent>
-							</Card>
-						</motion.div>
-					))}
-				</motion.div>
+		<section id='experience' className='mx-auto max-w-6xl px-5 py-16 sm:px-6 lg:px-8'>
+			<SectionHeading
+				eyebrow='Experience'
+				title='Production systems with measurable impact'
+				description='Role-by-role evidence of backend ownership, performance work, real-time delivery, and systems thinking.'
+			/>
+			<div className='space-y-8'>
+				{experiences.map((experience) => (
+					<article key={experience.id} className='rounded-[2rem] border border-white/10 bg-white/5 p-7'>
+						<div className='flex flex-col gap-4 border-b border-white/10 pb-6 lg:flex-row lg:items-end lg:justify-between'>
+							<div>
+								<p className='text-sm uppercase tracking-[0.3em] text-amber-200/75'>{experience.company}</p>
+								<h3 className='mt-3 text-3xl font-semibold text-white'>{experience.role}</h3>
+								<p className='mt-3 max-w-3xl text-white/72'>{experience.summary}</p>
+							</div>
+							<div className='text-sm uppercase tracking-[0.24em] text-white/45'>
+								<p>{experience.duration}</p>
+								<p className='mt-2'>{experience.location}</p>
+							</div>
+						</div>
+						<div className='mt-6 grid gap-8 lg:grid-cols-[1.2fr_0.8fr]'>
+							<ul className='space-y-3'>
+								{experience.bullets.map((bullet) => (
+									<li key={bullet} className='flex gap-3 text-white/74'>
+										<span className='mt-2 h-2 w-2 rounded-full bg-amber-200' />
+										<span>{bullet}</span>
+									</li>
+								))}
+							</ul>
+							<div className='flex flex-wrap gap-2'>
+								{experience.stack.map((item) => (
+									<span key={item} className='rounded-full border border-white/10 px-3 py-2 text-sm text-white/72'>
+										{item}
+									</span>
+								))}
+							</div>
+						</div>
+					</article>
+				))}
 			</div>
 		</section>
 	);

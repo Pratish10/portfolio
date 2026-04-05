@@ -1,169 +1,96 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-'use client';
+﻿import { Button } from '@/components/ui/button';
+import type { PortfolioData } from '@/types/portfolio-types';
+import { Download, Github, Linkedin, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 
-import { motion, easeOut } from 'motion/react';
-import { Download, Github, Linkedin, Twitter, MapPin, Bookmark } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+const iconMap = {
+	Github,
+	Linkedin,
+	Mail,
+};
 
-interface Personal {
-	firstName: string;
-	lastName: string;
-	title: string;
-	location: string;
-	about: string;
-	profileImage: string;
-	resumeLink: string;
-}
-
-interface SocialLink {
-	platform: string;
-	url: string;
-	icon: string;
-}
-
-interface HeroSectionProps {
-	personal: Personal;
-	socialLinks: SocialLink[];
-}
-
-const HeroSection = ({ personal, socialLinks }: HeroSectionProps) => {
-	const iconMap: { [key: string]: any } = {
-		Github,
-		Linkedin,
-		Twitter,
-		Bookmark,
-	};
-
-	const containerVariants = {
-		hidden: { opacity: 0 },
-		visible: {
-			opacity: 1,
-			transition: {
-				delayChildren: 0.3,
-				staggerChildren: 0.2,
-			},
-		},
-	};
-
-	const itemVariants = {
-		hidden: { y: 20, opacity: 0 },
-		visible: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				duration: 0.5,
-				ease: easeOut,
-			},
-		},
-	};
-
-	const imageVariants = {
-		hidden: { scale: 0, opacity: 0 },
-		visible: {
-			scale: 1,
-			opacity: 1,
-			transition: {
-				duration: 0.6,
-				ease: easeOut,
-			},
-		},
-	};
-
-	const buttonVariants = {
-		hidden: { y: 20, opacity: 0 },
-		visible: {
-			y: 0,
-			opacity: 1,
-			transition: {
-				duration: 0.5,
-				delay: 0.8,
-				ease: easeOut,
-			},
-		},
-	};
+const HeroSection = ({
+	personal,
+	cta,
+	socialLinks,
+}: {
+	personal: PortfolioData['personal'];
+	cta: PortfolioData['cta'];
+	socialLinks: PortfolioData['socialLinks'];
+}) => {
+	const profileImageSrc = personal.profileImage.startsWith('/')
+		? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${personal.profileImage}`
+		: personal.profileImage;
 
 	return (
-		<section
-			id='pratish'
-			className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-950 px-4 sm:px-6 lg:px-8'
-		>
-			<motion.div className='max-w-4xl mx-auto text-center my-10' variants={containerVariants} initial='hidden' animate='visible'>
-				<motion.div className='mb-8' variants={imageVariants}>
-					<div className='relative inline-block'>
-						<motion.img
-							src={personal.profileImage}
-							alt={`${personal.firstName} ${personal.lastName} - Portfolio`}
-							className='w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-2xl mx-auto'
-							whileHover={{ scale: 1.05 }}
-							transition={{ duration: 0.3 }}
+		<section className='mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-10 px-5 py-14 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8 lg:py-20'>
+			<div className='space-y-8'>
+				<div className='space-y-5'>
+					<h1 className='max-w-4xl text-5xl leading-[0.9] text-white sm:text-6xl lg:text-7xl'>{personal.title}</h1>
+					<p className='max-w-2xl text-lg leading-8 text-[var(--muted-ink)]'>{personal.summary}</p>
+				</div>
+				<div className='flex flex-wrap items-center gap-4 text-sm text-amber-100/80'>
+					<span className='inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2'>
+						<MapPin className='h-4 w-4' />
+						{personal.location}
+					</span>
+					<span className='rounded-full border border-white/10 bg-white/5 px-4 py-2'>{personal.availability}</span>
+				</div>
+				<div className='flex flex-col gap-3 sm:flex-row sm:flex-wrap'>
+					<Button asChild size='lg'>
+						<a href={cta.primary.href} target='_blank' rel='noreferrer'>
+							<Download className='mr-2 h-4 w-4' />
+							{cta.primary.label}
+						</a>
+					</Button>
+					<Button asChild size='lg' variant='outline'>
+						<a href={cta.secondary.href}>{cta.secondary.label}</a>
+					</Button>
+					<Button asChild size='lg' variant='ghost'>
+						<a href={cta.tertiary.href} target='_blank' rel='noreferrer'>
+							{cta.tertiary.label}
+						</a>
+					</Button>
+				</div>
+			</div>
+			<div className='grid gap-5'>
+				<div className='overflow-hidden rounded-[2rem] border border-[color:var(--line-strong)] bg-white/6 p-4 shadow-[0_30px_90px_rgba(0,0,0,0.2)]'>
+					<div className='rounded-[1.5rem] border border-white/10 bg-[#18323b] p-4'>
+						<Image
+							src={profileImageSrc}
+							alt={`${personal.fullName} portrait`}
+							width={720}
+							height={840}
+							priority
+							className='h-[420px] w-full rounded-[1.2rem] object-cover object-top'
 						/>
 					</div>
-				</motion.div>
-
-				<motion.div className='flex items-center justify-center mb-6 text-gray-600 dark:text-gray-400' variants={itemVariants}>
-					<MapPin className='w-4 h-4 mr-2' />
-					<span className='text-sm font-medium'>{personal.location}</span>
-				</motion.div>
-
-				<motion.h1 className='text-4xl md:text-6xl lg:text-7xl font-bold mb-6' variants={itemVariants}>
-					<span className='bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent'>
-						Hi, I&apos;m {personal.firstName}
-					</span>
-				</motion.h1>
-
-				<motion.h2 className='text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-8' variants={itemVariants}>
-					{personal.title}
-				</motion.h2>
-
-				<motion.p
-					className='text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed mb-12'
-					variants={itemVariants}
-				>
-					{personal.about}
-				</motion.p>
-
-				<motion.div className='flex flex-col sm:flex-row gap-4 justify-center items-center mb-12' variants={buttonVariants}>
-					<motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-						<Button
-							asChild
-							size='lg'
-							className='bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300'
-						>
-							<a href={personal.resumeLink} download>
-								<Download className='w-5 h-5 mr-2' />
-								Download Resume
-							</a>
-						</Button>
-					</motion.div>
-				</motion.div>
-
-				<motion.div className='flex justify-center space-x-6' variants={itemVariants}>
-					{socialLinks.map((social, index) => {
-						const Icon = iconMap[social.icon];
-						return (
-							<motion.a
-								key={social.platform}
-								href={social.url}
-								target='_blank'
-								rel='noopener noreferrer'
-								className='group relative p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700'
-								whileHover={{ scale: 1.1, y: -2 }}
-								whileTap={{ scale: 0.95 }}
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 1 + index * 0.1, duration: 0.3 }}
-							>
-								<Icon className='w-6 h-6 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300' />
-								<span className='sr-only'>{social.platform}</span>
-
-								<div className='absolute -top-12 left-1/2 transform -translate-x-1/2 bg-gray-900 dark:bg-gray-700 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none'>
-									{social.platform}
-								</div>
-							</motion.a>
-						);
-					})}
-				</motion.div>
-			</motion.div>
+				</div>
+				<div className='rounded-[2rem] border border-white/10 bg-white/5 p-6'>
+					<p className='text-sm uppercase tracking-[0.32em] text-amber-200/75'>Profile links</p>
+					<ul className='mt-5 space-y-3'>
+						{socialLinks.map((link) => {
+							const Icon = iconMap[link.icon as keyof typeof iconMap] ?? Mail;
+							return (
+								<li key={link.platform}>
+									<a
+										href={link.url}
+										target={link.url.startsWith('mailto:') ? undefined : '_blank'}
+										rel={link.url.startsWith('mailto:') ? undefined : 'noreferrer'}
+										className='flex items-center justify-between rounded-2xl border border-white/10 px-4 py-4 text-white/82 transition hover:border-[color:var(--line-strong)] hover:bg-white/8'
+									>
+										<span className='inline-flex items-center gap-3'>
+											<Icon className='h-4 w-4 text-[var(--warm-sand)]' />
+											{link.platform}
+										</span>
+										<span className='text-xs uppercase tracking-[0.3em] text-white/45'>Open</span>
+									</a>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
+			</div>
 		</section>
 	);
 };

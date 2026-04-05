@@ -1,159 +1,233 @@
-{
+﻿{
   "personal": {
+    "fullName": "Pratish Ninawe",
     "firstName": "Pratish",
     "lastName": "Ninawe",
-    "title": "Software Engineer",
-    "location": "Bengaluru, Karnataka",
-    "about": "I’m a versatile full‑stack Software Engineer based in Bengaluru with over two years of hands‑on experience building scalable, user‑centered web applications. At Celstream Technologies, I’ve led the development of high‑traffic React/Node.js solutions on AWS—delivering performance‑critical features that cut load times by 25%, architecting real‑time dashboards that improved page speed by 50%, and mentoring junior developers to ship production‑ready code in record time. During my internship at Neonflake, I designed and implemented a secure, full‑featured e‑commerce platform from Figma wireframes, leveraging Redis caching for a 95%+ API speedup and crafting a fully responsive UI that boosted user engagement by 35%. Outside of work, I’ve built “QR Dine,” a Next.js and Stripe–powered restaurant SaaS, and an Expense Tracker using the MERN stack and Redux to help users manage finances intuitively. I’m comfortable across modern web ecosystems (React, Next.js, TypeScript, Node.js, Python/Flask) and backed by Udemy’s “React – The Complete Guide” and Lyft’s backend virtual experience certification. Whether optimizing CDNs and code‑splitting for lightning‑fast experiences or architecting microservices with JWT‑secure APIs and in‑memory data handling, I’m passionate about bridging technical excellence with elegant, user‑focused design.",
-    "profileImage": "./Pratish.webp",
-    "resumeLink": "https://docs.google.com/document/d/11dSCxeD7p5ydPSoxJ_0Kui2vFl-oW4RklmYUXuL9DpA/edit?usp=sharing"
+    "title": "Full Stack Engineer | Backend Systems, Cloud, and Performance",
+    "location": "Bengaluru, Karnataka, India",
+    "summary": "Full Stack Engineer building production-grade applications across React, Node.js, cloud workflows, and performance-critical systems. Strongest in backend systems, scalable APIs, real-time interfaces, and measurable engineering improvements.",
+    "availability": "Open to recruiter and hiring manager conversations",
+    "profileImage": "/Pratish.webp",
+    "resumeLink": "https://docs.google.com/document/d/11dSCxeD7p5ydPSoxJ_0Kui2vFl-oW4RklmYUXuL9DpA/export?format=pdf"
+  },
+  "cta": {
+    "primary": {
+      "label": "Download Resume",
+      "href": "https://docs.google.com/document/d/11dSCxeD7p5ydPSoxJ_0Kui2vFl-oW4RklmYUXuL9DpA/export?format=pdf"
+    },
+    "secondary": {
+      "label": "Email Me",
+      "href": "mailto:pratish.1006@gmail.com"
+    },
+    "tertiary": {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/pratish-ninawe-6199b2220/"
+    }
+  },
+  "impactStats": [
+    {
+      "label": "faster page loads on critical user flows",
+      "value": "45%"
+    },
+    {
+      "label": "post-stabilization performance gains delivered",
+      "value": "10x"
+    },
+    {
+      "label": "real-time UI responsiveness improvement",
+      "value": "40%"
+    },
+    {
+      "label": "dashboard load-time improvement",
+      "value": "50%"
+    }
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "company": "Qwalton Private Limited",
+      "role": "Full Stack Engineer",
+      "duration": "Sep 2025 - Present",
+      "location": "Bengaluru, Karnataka",
+      "summary": "Maintaining and extending production AI-powered trading systems with strong performance, reliability, and real-time delivery requirements.",
+      "bullets": [
+        "Maintain and enhance production-grade AI-powered trading systems serving real-time users under strict performance and reliability expectations.",
+        "Review complex frontend and backend codebases to identify bugs, inefficiencies, and architecture improvements that reduce technical debt.",
+        "Optimized React rendering, API communication, and data synchronization to improve critical user flow page loads by 45%.",
+        "Contributed to system improvements that enabled up to 10x performance gains after stabilization."
+      ],
+      "stack": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Real-Time Systems"]
+    },
+    {
+      "id": 2,
+      "company": "Celstream Technologies",
+      "role": "Software Engineer",
+      "duration": "Nov 2023 - Sep 2025",
+      "location": "Bengaluru, Karnataka",
+      "summary": "Built performance-focused full-stack features, real-time interfaces, and production improvements across React, Node.js, and cloud-connected workflows.",
+      "bullets": [
+        "Designed real-time event-driven interfaces using WebSockets, improving responsiveness by 40% for data-intensive applications.",
+        "Improved frontend performance by 25% through bundle optimization, strategic caching, and asynchronous request tuning.",
+        "Mentored junior engineers and interns on clean code, Git workflows, and debugging practices, accelerating production-ready contributions.",
+        "Recognized for delivering a major feature implementation through innovation and systematic problem-solving."
+      ],
+      "stack": ["React", "TypeScript", "Node.js", "Flask", "AWS", "WebSockets"]
+    },
+    {
+      "id": 3,
+      "company": "Neonflake",
+      "role": "Software Engineer Intern",
+      "duration": "Sep 2023 - Nov 2023",
+      "location": "Remote",
+      "summary": "Delivered a full e-commerce platform from design files to secure backend flows, with a strong emphasis on responsiveness and API speed.",
+      "bullets": [
+        "Implemented a secure full-featured e-commerce platform from Figma designs using React, TypeScript, Node.js, and MongoDB.",
+        "Built JWT-secured backend APIs with Redis-backed performance improvements exceeding 95% on targeted requests.",
+        "Created a responsive interface that improved user engagement by 35% across devices."
+      ],
+      "stack": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Redis", "JWT"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "MyAlgoAI",
+      "tag": "Automated Trading Platform",
+      "summary": "Maintained and extended an automated trading platform integrating with multiple brokers for real-time monitoring and decision support.",
+      "highlights": [
+        "Supported a production trading workflow with real-time data handling.",
+        "Designed frontend interfaces for live monitoring and interactive visualization."
+      ],
+      "links": []
+    },
+    {
+      "id": 2,
+      "name": "Data Monitor Dashboard",
+      "tag": "Real-Time Metrics Dashboard",
+      "summary": "Built and optimized a streaming dashboard for monitoring operational metrics across performance-sensitive workflows.",
+      "highlights": [
+        "Reduced page load times by 50% through component-level optimization and code splitting.",
+        "Achieved 90% backend latency reduction by redesigning API call patterns and improving data-fetching efficiency."
+      ],
+      "links": []
+    },
+    {
+      "id": 3,
+      "name": "Ackumen Buckman",
+      "tag": "Enterprise Interface Modernization",
+      "summary": "Enhanced real-time enterprise user interfaces within an existing architecture, improving responsiveness and usability without destabilizing the system.",
+      "highlights": [
+        "Worked within a large-scale codebase to improve performance and usability.",
+        "Focused on practical improvements to responsiveness and engineering maintainability."
+      ],
+      "links": []
+    },
+    {
+      "id": 4,
+      "name": "QR Dine",
+      "tag": "Multi-Branch Restaurant SaaS",
+      "summary": "Built modular admin, client, and demo experiences for a scalable SaaS platform serving restaurant operations across multiple branches.",
+      "highlights": [
+        "Created reusable UI patterns for a multi-surface SaaS product.",
+        "Optimized rendering and API interactions to handle high-traffic, concurrency-heavy flows."
+      ],
+      "links": [
+        {
+          "label": "Live Demo",
+          "href": "https://qr-dine.vercel.app/"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/Pratish10/qr-dine"
+        }
+      ]
+    }
+  ],
+  "capabilityGroups": [
+    {
+      "title": "Backend & APIs",
+      "items": ["Node.js", "Express", "Flask", ".NET (C# APIs)", "REST APIs", "MongoDB", "PostgreSQL"]
+    },
+    {
+      "title": "Cloud & DevOps",
+      "items": ["AWS (EC2, S3)", "Docker", "GitHub Actions", "Deployment Workflows"]
+    },
+    {
+      "title": "Frontend Systems",
+      "items": ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "Redux"]
+    },
+    {
+      "title": "Performance & Testing",
+      "items": ["Lighthouse", "Jest", "React Testing Library", "Bundle Optimization", "Performance Tuning"]
+    },
+    {
+      "title": "Architecture & System Design",
+      "items": ["System Design", "Scalable Architecture", "Real-Time Data Flows", "Code Reviews", "Technical Mentoring"]
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "title": "React - The Complete Guide 2023",
+      "issuer": "Udemy",
+      "date": "Nov 2023",
+      "href": "https://www.udemy.com/certificate/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd/"
+    },
+    {
+      "id": 2,
+      "title": "Python For Everybody",
+      "issuer": "Coursera",
+      "date": "Mar 2020",
+      "href": "https://drive.google.com/file/d/1GrTFTG8T79G-UtTvIGtK2lb0uVTu7Tng/view"
+    },
+    {
+      "id": 3,
+      "title": "Frontend Development",
+      "issuer": "Certification",
+      "date": "Feb 2022",
+      "href": "https://drive.google.com/file/d/1avjnvbK710RemRjkteK8hMn_cpELPgM4/view"
+    }
+  ],
+  "recognition": [
+    "Recognized at Celstream Technologies for delivering a major feature implementation, showcasing innovation and problem-solving skills."
+  ],
+  "education": {
+    "school": "Shri Shankaracharya Technical Campus, India",
+    "degree": "Bachelor of Technology in Information Technology",
+    "duration": "2019 - 2023",
+    "score": "8.3 CGPA"
   },
   "socialLinks": [
-    {
-      "platform": "GitHub",
-      "url": "https://github.com/Pratish10",
-      "icon": "Github"
-    },
     {
       "platform": "LinkedIn",
       "url": "https://www.linkedin.com/in/pratish-ninawe-6199b2220/",
       "icon": "Linkedin"
     },
     {
-      "platform": "Twitter",
-      "url": "https://x.com/Pratish1086241",
-      "icon": "Twitter"
+      "platform": "GitHub",
+      "url": "https://github.com/Pratish10",
+      "icon": "Github"
     },
     {
-      "platform": "Substack",
-      "url": "https://pratishninawe.substack.com/",
-      "icon": "Bookmark"
+      "platform": "Email",
+      "url": "mailto:pratish.1006@gmail.com",
+      "icon": "Mail"
     }
   ],
-  "experience": [
-    {
-      "id": 1,
-      "company": "Qwalton Private Limited",
-      "position": "Full Stack Engineer",
-      "duration": "Sept 2025 - Present",
-      "location": "Bengaluru, Karnataka",
-      "description": "Full Stack Developer at Qwalton, building and maintaining MYALGOAI — an AI-powered trading platform using the MERN stack",
-      "technologies": ["React", "Javascript", "TypeScript", "Express.js", "MongoDB"],
-      "achievements": [
-        "Maintain and enhance MYALGOAI, an AI-powered trading platform empowering retail investors with automated trading strategies.",
-        "Develop scalable web applications using the MERN stack (MongoDB, Express, React, Node.js).",
-        "Implement real-time data integrations and optimize backend performance for seamless trading execution.",
-        "Focus on automation, scalability, and fintech innovation to deliver high-performance solutions."
-      ]
-    },
-    {
-      "id": 2,
-      "company": "Celstream Technologies",
-      "position": "Software Engineer",
-      "duration": "Nov 2023 - Sept 2025",
-      "location": "Bengaluru, Karnataka",
-      "description": "Lead development of scalable web applications using React, Node.js, and AWS. Mentored junior developers and improved team productivity by 40%.",
-      "technologies": ["React", "Javascript", "TypeScript", "Azure Devops", "Python", "Flask", "AWS"],
-      "achievements": [
-        "Implemented interactive diagramming features using GoJS in a React-based system, building 50K+ custom node/link templates with drag-and-drop, zoom/pan, and real-time updates, improving user task efficiency by 40%.",
-        "Integrated RESTful APIs with advanced error state handling and retry mechanisms.",
-        "Mentored 2 interns, accelerating onboarding and enabling them to ship production-ready code within 2 weeks.",
-        "Architected and led a performance-critical feature for a high-traffic application, achieving 25% faster load times and zero post-deployment rollbacks.",
-        "Designed a real-time visualization dashboard using advanced optimization techniques like code-splitting, lazy loading, and CDN caching, improving page load speeds by 50%.",
-        "Developed Flask-based backend services with in-memory data handling mimicking Redis behavior, reducing API response times by 90%."
-      ]
-    },
-    {
-      "id": 3,
-      "company": "Neonflake",
-      "position": "Software Engineer Intern",
-      "duration": "Sept 2023 - Nov 2023",
-      "location": "Remote",
-      "description": "Contributed as a Full Stack Developer intern to build a complete e-commerce web application from scratch based on Figma designs. Focused on delivering responsive frontend and high-performance backend architecture with secure authentication.",
-      "technologies": ["React", "TypeScript", "JavaScript", "Node.js", "Express.js", "MongoDB", "Redis", "JWT"],
-      "achievements": [
-        "Designed and developed a fully functional e-commerce platform from Figma designs using React.js and TypeScript",
-        "Built secure and scalable backend APIs using Node.js, Express.js, MongoDB, and JWT-based authentication",
-        "Implemented Redis caching with eviction policy to support stateful backend, improving API response time by 95%+",
-        "Delivered a fully responsive frontend interface across desktop and mobile devices",
-        "Improved user engagement by 35% through intuitive design and performance optimizations",
-        "Integrated modern UI/UX design systems to align with current web standards"
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "id": 1,
-      "title": "Q R Dine",
-      "description": "QR Dine is a SaaS-based platform that revolutionizes the restaurant dining experience by allowing customers to scan a unique QR code placed on each table to view the menu, place orders, and interact with the restaurant directly from their mobile devices. Restaurant owners can manage multiple branches, tables, menus, and categories through the admin portal, while customers can seamlessly place orders via the client portal.",
-      "technologies": ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
-      "liveUrl": "https://qr-dine.vercel.app/",
-      "githubUrl": "https://github.com/Pratish10/qr-dine",
-      "featured": false,
-      "category": "Full Stack"
-    },
-    {
-      "id": 2,
-      "title": "Expense Tracker App",
-      "description": "Expense Tracker App a financial management application utilizing the MERN stack and Redux. This app empowers users to effortlessly manage their finances, understand spending patterns, and make informed financial decisions.",
-      "technologies": ["React", "Node.js", "Redux", "MongoDB", "Material-UI"],
-      "liveUrl": "https://expense-tracker-app-eta-lilac.vercel.app/",
-      "githubUrl": "https://github.com/Pratish10/Expense-Tracker-App",
-      "featured": false,
-      "category": "Full Stack"
-    },
-    {
-      "id": 3,
-      "title": "Skill packers",
-      "description": "Developed and deployed a static website for Skill Packers, a Bengaluru-based manufacturing company specializing in wooden pallets and packaging solutions. Designed a responsive and user-friendly interface to enhance the company’s online presence.",
-      "technologies": ["Next.js", "Typescript", "Javascript", "DNS"],
-      "liveUrl": "https://www.skillpackers.in/",
-      "githubUrl": "https://github.com/Pratish10/skill-packers",
-      "featured": false,
-      "category": "Frontend"
-    }
-  ],
-  "skills": [
-  { "name": "React.js", "icon": "⚛️", "color": "sky" },
-  { "name": "Next.js", "icon": "⬛", "color": "zinc" },
-  { "name": "TypeScript", "icon": "🔷", "color": "blue" },
-  { "name": "JavaScript", "icon": "✨", "color": "yellow" },
-  { "name": "Node.js", "icon": "🌿", "color": "green" },
-  { "name": "Python", "icon": "🐍", "color": "indigo" },
-  { "name": "Express.js", "icon": "🚌", "color": "gray" },
-  { "name": "PostgreSQL", "icon": "🐘", "color": "cyan" },
-  { "name": "MongoDB", "icon": "🍃", "color": "emerald" },
-  { "name": "REST APIs", "icon": "🔗", "color": "neutral" },
-  { "name": "HTML5", "icon": "🌐", "color": "orange" },
-  { "name": "CSS3", "icon": "🎨", "color": "blue" },
-  { "name": "Git", "icon": "🔧", "color": "red" },
-  { "name": "Docker", "icon": "🐳", "color": "blue" },
-  { "name": "Azure Devops", "icon": "☁️", "color": "blue" },
-  { "name": "OOPs", "icon": "🏗️", "color": "purple" },
-  { "name": "Data Structures and Algorithms", "icon": "🧮", "color": "teal" }
-],
-  "certifications": [
-    {
-      "id": 1,
-      "title": "React - The Complete Guide 2023",
-      "issuer": "Udemy",
-      "date": "Oct 2023",
-      "credentialId": "UC-b0084af5-da7c-475f-8d8d-29e218fd64dd",
-      "image": "https://udemy-certificate.s3.amazonaws.com/image/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd.jpg?v=1697305953000",
-      "verifyUrl": "https://www.udemy.com/certificate/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd/"
-    },
-    {
-      "id": 2,
-      "title": "LYFT Backend Engineering Virtual Experience Program",
-      "issuer": "LYFT",
-      "date": "2023",
-      "credentialId": "mgXLGq53TAMwHvKhK",
-      "image": "https://cdn-assets.theforage.com/images/forage-schema-logo.png",
-      "verifyUrl": "https://drive.google.com/file/d/1ndlbHZDNKPqorKwPloXyzNudWz_e-4YX/view?usp=sharing"
-    }
-  ],
-  "contact": {
-    "email": "pratish.1006@gmail.com",
-    "phone": "+91 9179476460"
+  "seo": {
+    "title": "Pratish Ninawe | Full Stack Engineer - Backend, Cloud, Systems",
+    "description": "Recruiter-focused portfolio for Pratish Ninawe, a full stack engineer with backend systems, cloud, performance, and real-time application experience in Bengaluru.",
+    "keywords": [
+      "Pratish Ninawe",
+      "Full Stack Engineer",
+      "Backend Engineer",
+      "System Design",
+      "Cloud Engineer",
+      "AWS",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Bengaluru Software Engineer"
+    ]
   }
 }

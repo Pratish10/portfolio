@@ -5,11 +5,11 @@ on:
   push:
     branches: [master]
     paths:
-      - 'public/**'
-      - '**.ts'
-      - '**.tsx'
-      - 'package.json'
-      - 'pnpm-lock.yaml'
+      - "public/**"
+      - "**.ts"
+      - "**.tsx"
+      - "package.json"
+      - "pnpm-lock.yaml"
   workflow_dispatch:
 
 permissions:
@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node.js (with pnpm cache)
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install pnpm
         run: npm i -g pnpm
@@ -62,9 +62,9 @@ jobs:
           echo "Listing contents of 'out/' directory:"
           ls -R out/
           echo "Checking for 'pratish.json'..."
-          if [ -f out/pratish.json ]; then echo "✔ pratish.json found"; else echo "✖ pratish.json missing"; exit 1; fi
+          if [ -f out/pratish.json ]; then echo "pratish.json found"; else echo "pratish.json missing"; exit 1; fi
           echo "Checking for 'Pratish.webp'..."
-          if [ -f out/Pratish.webp ]; then echo "✔ Pratish.webp found"; else echo "✖ Pratish.webp missing"; exit 1; fi
+          if [ -f out/Pratish.webp ]; then echo "Pratish.webp found"; else echo "Pratish.webp missing"; exit 1; fi
 
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
