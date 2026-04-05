@@ -10,17 +10,19 @@
 
 ## 1. Objective
 
-Redesign the portfolio as a recruiter-first, SEO-ready, AI-readable engineering profile that positions Pratish Ninawe as a **full-stack engineer with backend systems, cloud, and performance depth**.
+Redesign the portfolio as a recruiter-first, SEO-ready, AI-readable engineering profile that positions Pratish Ninawe as a **full-stack engineer with
+backend systems, cloud, and performance depth**.
 
 The redesign must:
+
 - update the site content using the latest resume information
 - replace the generic portfolio feel with a strong Sunset Boulevard editorial identity
 - improve recruiter conversion through clearer CTA hierarchy and faster scanning
 - improve technical SEO, preview quality, and crawlability
 - improve AI-search extractability through better structure and schema
 - produce two creative deliverables in addition to the site:
-  - a design philosophy `.md` file
-  - a single polished visual canvas artifact `.png` or `.pdf`
+    - a design philosophy `.md` file
+    - a single polished visual canvas artifact `.png` or `.pdf`
 
 ---
 
@@ -28,15 +30,18 @@ The redesign must:
 
 The site should not present Pratish as a generalist "developer" with broad but shallow experience. It should present him as:
 
-> A full-stack engineer who can ship across the stack, with particular credibility in backend systems, production reliability, performance optimization, cloud workflows, and real-time applications.
+> A full-stack engineer who can ship across the stack, with particular credibility in backend systems, production reliability, performance
+> optimization, cloud workflows, and real-time applications.
 
 The narrative emphasis should be:
+
 - backend systems and API thinking first
 - cloud and deployment credibility second
 - full-stack breadth as supporting proof
 - UI polish as a bonus, not the main story
 
 Recruiters and HR should leave the page understanding:
+
 - role fit
 - technical focus
 - measurable impact
@@ -50,6 +55,7 @@ Recruiters and HR should leave the page understanding:
 ### 3.1 Page Job
 
 The page's job is to turn a quick recruiter scan into one of three actions:
+
 1. download the resume
 2. send an email
 3. open LinkedIn
@@ -100,6 +106,7 @@ Recommended order:
 The approved design direction is **Sunset Boulevard Editorial**.
 
 This means:
+
 - a cinematic editorial feel rather than a generic SaaS or developer-template look
 - boulevard blue as the dominant canvas
 - burnt orange, coral, and warm sand as accent colors
@@ -109,6 +116,7 @@ This means:
 ### 4.2 Aesthetic Goals
 
 The page should feel:
+
 - memorable
 - premium
 - deliberate
@@ -116,6 +124,7 @@ The page should feel:
 - technically credible
 
 It should **not** feel:
+
 - playful
 - gamer-terminal themed
 - template-like
@@ -133,6 +142,7 @@ It should **not** feel:
 ### 4.4 Recruiter Accessibility
 
 Even with strong art direction, the page must remain easy to scan in under 30 seconds:
+
 - visible job title and location
 - immediate CTA stack
 - concise summary
@@ -147,6 +157,7 @@ Even with strong art direction, the page must remain easy to scan in under 30 se
 ### 5.1 Hero Copy
 
 The hero should communicate:
+
 - current role and positioning
 - core stack alignment
 - backend/cloud/system-design emphasis
@@ -160,12 +171,14 @@ The hero summary should avoid autobiographical drift. It should read like a stro
 Use the provided resume as primary source material.
 
 Each role should emphasize:
+
 - what systems were worked on
 - what changed because of the work
 - what technical depth was demonstrated
 - what measurable impact was achieved
 
 Priority ordering:
+
 1. Qwalton Private Limited
 2. Celstream Technologies
 3. Neonflake
@@ -173,6 +186,7 @@ Priority ordering:
 ### 5.3 Skills Reorganization
 
 Replace the flat tag list with grouped capabilities, such as:
+
 - Backend & APIs
 - Cloud & DevOps
 - Frontend Systems
@@ -184,6 +198,7 @@ Replace the flat tag list with grouped capabilities, such as:
 Projects should not read like random side-project cards.
 
 They should be reframed as capability evidence:
+
 - real-time systems
 - scalable SaaS work
 - dashboard/performance work
@@ -192,6 +207,7 @@ They should be reframed as capability evidence:
 ### 5.5 CTA Hierarchy
 
 CTA order is fixed:
+
 1. `Download Resume`
 2. `Email Me`
 3. `LinkedIn`
@@ -206,7 +222,9 @@ This hierarchy should appear in the hero and the closing section. The primary CT
 
 The redesign should move away from a client-only content fetch model for core portfolio content.
 
-The final exported HTML should contain meaningful page content without requiring a delayed client-side fetch. Content should be available at build time for:
+The final exported HTML should contain meaningful page content without requiring a delayed client-side fetch. Content should be available at build
+time for:
+
 - crawlability
 - preview quality
 - improved perceived performance
@@ -217,6 +235,7 @@ The final exported HTML should contain meaningful page content without requiring
 Use typed content source data, but structure it for direct consumption by the static page build rather than runtime fetch-only loading.
 
 The content model should support:
+
 - personal profile
 - proof metrics
 - experiences
@@ -229,6 +248,7 @@ The content model should support:
 ### 6.3 Component Boundaries
 
 Components should be focused and purposeful:
+
 - hero
 - impact band
 - experience
@@ -238,6 +258,7 @@ Components should be focused and purposeful:
 - contact/footer
 
 Cross-cutting UI pieces should be separated cleanly:
+
 - buttons
 - badges
 - stat treatments
@@ -253,6 +274,7 @@ Avoid large monolithic sections that combine content logic, animation, and styli
 ### 7.1 On-Page SEO
 
 Update the site to target recruiter-relevant query language naturally:
+
 - Pratish Ninawe
 - Full Stack Engineer
 - Backend Engineer
@@ -262,6 +284,7 @@ Update the site to target recruiter-relevant query language naturally:
 - Bengaluru / India
 
 Update:
+
 - title
 - meta description
 - heading hierarchy
@@ -273,6 +296,7 @@ Update:
 ### 7.2 Crawlability and Export Hygiene
 
 Ensure the exported/static output supports:
+
 - robots file
 - sitemap
 - correct canonical handling
@@ -281,7 +305,8 @@ Ensure the exported/static output supports:
 
 ### 7.3 Lint and Build Reliability
 
-Fix the current linting hygiene issue where generated output can pollute source linting. Repository-level verification should produce trustworthy source checks.
+Fix the current linting hygiene issue where generated output can pollute source linting. Repository-level verification should produce trustworthy
+source checks.
 
 ---
 
@@ -292,6 +317,7 @@ The goal is not gimmicky "AI optimization," but stronger extractability, clarity
 ### 8.1 Content Structure for AI Readability
 
 Include concise, direct-answer content patterns such as:
+
 - short positioning summary
 - explicit quantified impact statements
 - clearly titled experience sections
@@ -299,6 +325,7 @@ Include concise, direct-answer content patterns such as:
 - grouped capability taxonomy
 
 The page should make it easy for an AI system to infer:
+
 - who Pratish is
 - what roles he fits
 - what technologies he works with
@@ -308,11 +335,13 @@ The page should make it easy for an AI system to infer:
 ### 8.2 Structured Data
 
 Add schema markup appropriate for a professional profile and portfolio, likely including:
+
 - `Person`
 - `ProfilePage`
 - `WebSite`
 
 Structured data should reinforce:
+
 - name
 - job title / role
 - location
@@ -322,6 +351,7 @@ Structured data should reinforce:
 ### 8.3 AI-Friendly Presentation
 
 Content should prioritize:
+
 - directness
 - specificity
 - currentness
@@ -339,6 +369,7 @@ Avoid vague marketing abstractions that are difficult for AI systems to summariz
 This portfolio functions as a professional conversion page rather than a consumer marketing site.
 
 The conversion logic is:
+
 - attract via search, name lookup, resume sharing, or direct links
 - establish role fit quickly
 - prove impact
@@ -346,11 +377,13 @@ The conversion logic is:
 
 ### 9.2 SEM Readiness
 
-We are not building an ad-funnel site, but the page should still be ready for search-intent traffic. Messaging should align with the kinds of queries recruiters use and should support strong snippet and preview behavior.
+We are not building an ad-funnel site, but the page should still be ready for search-intent traffic. Messaging should align with the kinds of queries
+recruiters use and should support strong snippet and preview behavior.
 
 ### 9.3 Trust Signals
 
 Trust should come from:
+
 - named employers
 - quantified outcomes
 - certifications
@@ -365,6 +398,7 @@ Trust should come from:
 Create a separate `.md` file that defines the visual movement behind the redesign.
 
 Requirements:
+
 - 4 to 6 substantial paragraphs
 - name the movement in 1 to 2 words
 - describe the philosophy through space, form, color, composition, hierarchy, rhythm, and visual restraint
@@ -380,6 +414,7 @@ This file is not the same as the implementation spec. It is a creative artifact 
 Create one single-page visual artifact as `.png` or `.pdf`.
 
 Requirements:
+
 - museum-quality or magazine-quality execution
 - minimal text, mostly visual communication
 - built from the design philosophy and the subtle conceptual thread of the request
@@ -394,6 +429,7 @@ The canvas should feel like a high-craft companion artifact to the portfolio ide
 ## 12. Verification Requirements
 
 Before any completion claims:
+
 - run source lint checks
 - run build/export checks
 - confirm exported HTML contains actual recruiter-facing content
@@ -406,6 +442,7 @@ Before any completion claims:
 ## 13. Out of Scope
 
 The following are not required unless needed incidentally:
+
 - multi-page blog system
 - CMS integration
 - analytics implementation
@@ -418,6 +455,7 @@ The following are not required unless needed incidentally:
 ## 14. Implementation Order
 
 Planned execution order:
+
 1. content model and recruiter-first copy rewrite
 2. static-first rendering and page architecture cleanup
 3. visual redesign and section rebuild
@@ -431,6 +469,7 @@ Planned execution order:
 ## 15. Success Criteria
 
 The redesign is successful when:
+
 - recruiters can identify role fit within seconds
 - the page feels premium and memorable without losing clarity
 - backend/cloud/system-design emphasis is unmistakable
@@ -439,5 +478,3 @@ The redesign is successful when:
 - metadata and schema make the profile easy to summarize and cite
 - the site passes build and source verification cleanly
 - the design philosophy and canvas artifact feel like high-craft companion pieces rather than afterthoughts
-
-

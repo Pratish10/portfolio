@@ -1,4 +1,5 @@
-﻿import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
+import { withBasePath } from '@/lib/utils';
 import type { PortfolioData } from '@/types/portfolio-types';
 import { Download, Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import Image from 'next/image';
@@ -18,9 +19,7 @@ const HeroSection = ({
 	cta: PortfolioData['cta'];
 	socialLinks: PortfolioData['socialLinks'];
 }) => {
-	const profileImageSrc = personal.profileImage.startsWith('/')
-		? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${personal.profileImage}`
-		: personal.profileImage;
+	const profileImageSrc = withBasePath(process.env.BASE_PATH, personal.profileImage);
 
 	return (
 		<section className='mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-10 px-5 py-14 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8 lg:py-20'>

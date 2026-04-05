@@ -8,6 +8,7 @@ on:
       - "public/**"
       - "**.ts"
       - "**.tsx"
+      - ".github/workflows/deploy.yml"
       - "package.json"
       - "pnpm-lock.yaml"
   workflow_dispatch:
@@ -24,6 +25,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      BASE_PATH: ${{ vars.BASE_PATH || 'https://pratish10.github.io/portfolio' }}
 
     steps:
       - name: Checkout repository

@@ -21,8 +21,7 @@ body {
 	min-height: 100vh;
 	background:
 		radial-gradient(circle at 12% 8%, rgba(244, 162, 97, 0.24), transparent 24%),
-		radial-gradient(circle at 88% 14%, rgba(233, 196, 106, 0.18), transparent 22%),
-		linear-gradient(180deg, #203844 0%, #264653 38%, #1b313a 100%);
+		radial-gradient(circle at 88% 14%, rgba(233, 196, 106, 0.18), transparent 22%), linear-gradient(180deg, #203844 0%, #264653 38%, #1b313a 100%);
 	color: var(--ink);
 	font-family: var(--font-body), sans-serif;
 }
@@ -33,8 +32,8 @@ body::before {
 	inset: 0;
 	pointer-events: none;
 	background-image:
-		linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
-		linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+		linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
 	background-size: 96px 96px;
 	opacity: 0.18;
 	mask-image: linear-gradient(180deg, white, transparent 85%);

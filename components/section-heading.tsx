@@ -1,12 +1,4 @@
-﻿const SectionHeading = ({
-	eyebrow,
-	title,
-	description,
-}: {
-	eyebrow: string;
-	title: string;
-	description?: string;
-}) => {
+﻿const SectionHeading = ({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) => {
 	return (
 		<header className='mb-10 space-y-4'>
 			<p className='text-sm uppercase tracking-[0.35em] text-cyan-200/75'>{eyebrow}</p>
