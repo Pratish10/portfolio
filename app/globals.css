@@ -1,16 +1,32 @@
-﻿@import 'tailwindcss';
+@import 'tailwindcss';
 @import 'tw-animate-css';
 
 :root {
-	--boulevard-blue: #264653;
-	--boulevard-deep: #1b313a;
-	--burnt-orange: #e76f51;
-	--coral: #f4a261;
-	--warm-sand: #e9c46a;
-	--ink: #f8f1e3;
-	--muted-ink: rgba(248, 241, 227, 0.72);
-	--line: rgba(233, 196, 106, 0.18);
-	--line-strong: rgba(244, 162, 97, 0.35);
+	/* Base palette — Terminal Engineering theme */
+	--bg-base: #0c1210;
+	--bg-elevated: #111a16;
+	--bg-card: #141d19;
+
+	/* Keep old names so existing components work via var() references */
+	--boulevard-blue: #141d19;
+	--boulevard-deep: #0c1210;
+	--burnt-orange: #00d4a0;
+	--coral: #00ffb3;
+	--warm-sand: #6ecdb2;
+	--ink: #ddeee8;
+	--muted-ink: rgba(221, 238, 232, 0.62);
+	--line: rgba(0, 212, 160, 0.1);
+	--line-strong: rgba(0, 212, 160, 0.32);
+
+	/* New tokens */
+	--accent: #00d4a0;
+	--accent-bright: #00ffb3;
+	--accent-dim: rgba(0, 212, 160, 0.18);
+	--signal: #00d4a0;
+	--signal-muted: rgba(0, 212, 160, 0.12);
+	--code-bg: rgba(10, 16, 13, 0.88);
+	--success: #4ade80;
+	--danger: #f87171;
 }
 
 html {
@@ -19,10 +35,10 @@ html {
 
 body {
 	min-height: 100vh;
-	background:
-		radial-gradient(circle at 12% 8%, rgba(244, 162, 97, 0.24), transparent 24%),
-		radial-gradient(circle at 88% 14%, rgba(233, 196, 106, 0.18), transparent 22%),
-		linear-gradient(180deg, #203844 0%, #264653 38%, #1b313a 100%);
+	background-color: #0c1210;
+	background-image:
+		radial-gradient(circle at 4% 4%, rgba(0, 212, 160, 0.07), transparent 35%),
+		radial-gradient(circle at 96% 92%, rgba(0, 180, 120, 0.05), transparent 30%);
 	color: var(--ink);
 	font-family: var(--font-body), sans-serif;
 }
@@ -33,11 +49,11 @@ body::before {
 	inset: 0;
 	pointer-events: none;
 	background-image:
-		linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
-		linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
-	background-size: 96px 96px;
-	opacity: 0.18;
-	mask-image: linear-gradient(180deg, white, transparent 85%);
+		linear-gradient(to right, rgba(0, 212, 160, 0.045) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(0, 212, 160, 0.03) 1px, transparent 1px);
+	background-size: 52px 52px;
+	opacity: 1;
+	z-index: 0;
 }
 
 body::after {
@@ -45,7 +61,15 @@ body::after {
 	position: fixed;
 	inset: 0;
 	pointer-events: none;
-	background: radial-gradient(circle at center, transparent 55%, rgba(6, 13, 17, 0.26) 100%);
+	background: radial-gradient(ellipse at center, transparent 60%, rgba(6, 10, 8, 0.35) 100%);
+	z-index: 0;
+}
+
+main,
+header,
+footer {
+	position: relative;
+	z-index: 1;
 }
 
 * {
@@ -53,8 +77,8 @@ body::after {
 }
 
 ::selection {
-	background: rgba(244, 162, 97, 0.35);
-	color: white;
+	background: rgba(0, 212, 160, 0.3);
+	color: #ffffff;
 }
 
 img {
@@ -71,8 +95,8 @@ img {
 	h2,
 	h3,
 	h4 {
-		font-family: var(--font-display), serif;
-		letter-spacing: -0.03em;
+		font-family: var(--font-display), sans-serif;
+		letter-spacing: -0.02em;
 	}
 
 	p,
@@ -80,5 +104,10 @@ img {
 	a,
 	span {
 		font-family: var(--font-body), sans-serif;
+	}
+
+	/* Monospace labels */
+	.mono {
+		font-family: var(--font-mono), monospace;
 	}
 }

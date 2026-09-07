@@ -1,10 +1,11 @@
-﻿import { describe, expect, it } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import { siteConfig } from '@/config/site-config';
 
 describe('siteConfig', () => {
-	it('targets recruiter-facing backend and cloud positioning', () => {
-		expect(String(siteConfig.title)).toContain('Full Stack Engineer');
-		expect(siteConfig.description ?? '').toContain('backend');
-		expect(siteConfig.description ?? '').toContain('cloud');
+	it('targets backend and Azure integration positioning', () => {
+		expect(String(siteConfig.title)).toContain('Backend');
+		expect(String(siteConfig.title)).toContain('Azure Integration');
+		expect((siteConfig.description ?? '').toLowerCase()).toContain('backend');
+		expect(siteConfig.description ?? '').toContain('Azure');
 	});
 });

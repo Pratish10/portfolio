@@ -17,9 +17,7 @@ export default function SchemaScript() {
 				addressRegion: 'Karnataka',
 				addressCountry: 'IN',
 			},
-			sameAs: portfolioData.socialLinks
-				.map((item) => item.url)
-				.filter((url) => url.startsWith('http')),
+			sameAs: portfolioData.socialLinks.map((item) => item.url).filter((url) => url.startsWith('http')),
 			knowsAbout: portfolioData.capabilityGroups.flatMap((group) => group.items),
 		},
 	};

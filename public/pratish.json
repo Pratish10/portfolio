@@ -1,233 +1,557 @@
-﻿{
-  "personal": {
-    "fullName": "Pratish Ninawe",
-    "firstName": "Pratish",
-    "lastName": "Ninawe",
-    "title": "Full Stack Engineer | Backend Systems, Cloud, and Performance",
-    "location": "Bengaluru, Karnataka, India",
-    "summary": "Full Stack Engineer building production-grade applications across React, Node.js, cloud workflows, and performance-critical systems. Strongest in backend systems, scalable APIs, real-time interfaces, and measurable engineering improvements.",
-    "availability": "Open to recruiter and hiring manager conversations",
-    "profileImage": "/Pratish.webp",
-    "resumeLink": "https://docs.google.com/document/d/11dSCxeD7p5ydPSoxJ_0Kui2vFl-oW4RklmYUXuL9DpA/export?format=pdf"
-  },
-  "cta": {
-    "primary": {
-      "label": "Download Resume",
-      "href": "https://docs.google.com/document/d/11dSCxeD7p5ydPSoxJ_0Kui2vFl-oW4RklmYUXuL9DpA/export?format=pdf"
+{
+    "personal": {
+        "fullName": "Pratish Ninawe",
+        "firstName": "Pratish",
+        "lastName": "Ninawe",
+        "title": "Backend & Azure Integration Engineer",
+        "location": "Bengaluru, Karnataka, India",
+        "summary": "2.5 years shipping production fintech systems, not prototypes. Rebuilt a trading backend from Node.js to .NET Core Clean Architecture. Designed an Azure integration pipeline processing 10–20 million records per sync for a Netherlands enterprise client. Daily .NET C# and Python engineer treating Logic Apps, Service Bus, and event-driven architecture as production dependencies — typed, tested, observable, repeatable.",
+        "availability": "Open to Senior Backend, Azure Integration, and AI Engineering roles",
+        "profileImage": "/Pratish.webp",
+        "resumeLink": "https://docs.google.com/document/d/19WRvDCeGVc651x5dfTY_ZHJp5T_qb5fTh-FHD7OYFiQ/export?format=pdf"
     },
-    "secondary": {
-      "label": "Email Me",
-      "href": "mailto:pratish.1006@gmail.com"
+    "cta": {
+        "primary": {
+            "label": "Download Resume",
+            "href": "https://docs.google.com/document/d/19WRvDCeGVc651x5dfTY_ZHJp5T_qb5fTh-FHD7OYFiQ/export?format=pdf"
+        },
+        "secondary": {
+            "label": "Email Me",
+            "href": "mailto:pratish.1006@gmail.com"
+        },
+        "tertiary": {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/pratish-ninawe"
+        }
     },
-    "tertiary": {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/pratish-ninawe-6199b2220/"
-    }
-  },
-  "impactStats": [
-    {
-      "label": "faster page loads on critical user flows",
-      "value": "45%"
-    },
-    {
-      "label": "post-stabilization performance gains delivered",
-      "value": "10x"
-    },
-    {
-      "label": "real-time UI responsiveness improvement",
-      "value": "40%"
-    },
-    {
-      "label": "dashboard load-time improvement",
-      "value": "50%"
-    }
-  ],
-  "experiences": [
-    {
-      "id": 1,
-      "company": "Qwalton Private Limited",
-      "role": "Full Stack Engineer",
-      "duration": "Sep 2025 - Present",
-      "location": "Bengaluru, Karnataka",
-      "summary": "Maintaining and extending production AI-powered trading systems with strong performance, reliability, and real-time delivery requirements.",
-      "bullets": [
-        "Maintain and enhance production-grade AI-powered trading systems serving real-time users under strict performance and reliability expectations.",
-        "Review complex frontend and backend codebases to identify bugs, inefficiencies, and architecture improvements that reduce technical debt.",
-        "Optimized React rendering, API communication, and data synchronization to improve critical user flow page loads by 45%.",
-        "Contributed to system improvements that enabled up to 10x performance gains after stabilization."
-      ],
-      "stack": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Real-Time Systems"]
-    },
-    {
-      "id": 2,
-      "company": "Celstream Technologies",
-      "role": "Software Engineer",
-      "duration": "Nov 2023 - Sep 2025",
-      "location": "Bengaluru, Karnataka",
-      "summary": "Built performance-focused full-stack features, real-time interfaces, and production improvements across React, Node.js, and cloud-connected workflows.",
-      "bullets": [
-        "Designed real-time event-driven interfaces using WebSockets, improving responsiveness by 40% for data-intensive applications.",
-        "Improved frontend performance by 25% through bundle optimization, strategic caching, and asynchronous request tuning.",
-        "Mentored junior engineers and interns on clean code, Git workflows, and debugging practices, accelerating production-ready contributions.",
-        "Recognized for delivering a major feature implementation through innovation and systematic problem-solving."
-      ],
-      "stack": ["React", "TypeScript", "Node.js", "Flask", "AWS", "WebSockets"]
-    },
-    {
-      "id": 3,
-      "company": "Neonflake",
-      "role": "Software Engineer Intern",
-      "duration": "Sep 2023 - Nov 2023",
-      "location": "Remote",
-      "summary": "Delivered a full e-commerce platform from design files to secure backend flows, with a strong emphasis on responsiveness and API speed.",
-      "bullets": [
-        "Implemented a secure full-featured e-commerce platform from Figma designs using React, TypeScript, Node.js, and MongoDB.",
-        "Built JWT-secured backend APIs with Redis-backed performance improvements exceeding 95% on targeted requests.",
-        "Created a responsive interface that improved user engagement by 35% across devices."
-      ],
-      "stack": ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Redis", "JWT"]
-    }
-  ],
-  "projects": [
-    {
-      "id": 1,
-      "name": "MyAlgoAI",
-      "tag": "Automated Trading Platform",
-      "summary": "Maintained and extended an automated trading platform integrating with multiple brokers for real-time monitoring and decision support.",
-      "highlights": [
-        "Supported a production trading workflow with real-time data handling.",
-        "Designed frontend interfaces for live monitoring and interactive visualization."
-      ],
-      "links": []
-    },
-    {
-      "id": 2,
-      "name": "Data Monitor Dashboard",
-      "tag": "Real-Time Metrics Dashboard",
-      "summary": "Built and optimized a streaming dashboard for monitoring operational metrics across performance-sensitive workflows.",
-      "highlights": [
-        "Reduced page load times by 50% through component-level optimization and code splitting.",
-        "Achieved 90% backend latency reduction by redesigning API call patterns and improving data-fetching efficiency."
-      ],
-      "links": []
-    },
-    {
-      "id": 3,
-      "name": "Ackumen Buckman",
-      "tag": "Enterprise Interface Modernization",
-      "summary": "Enhanced real-time enterprise user interfaces within an existing architecture, improving responsiveness and usability without destabilizing the system.",
-      "highlights": [
-        "Worked within a large-scale codebase to improve performance and usability.",
-        "Focused on practical improvements to responsiveness and engineering maintainability."
-      ],
-      "links": []
-    },
-    {
-      "id": 4,
-      "name": "QR Dine",
-      "tag": "Multi-Branch Restaurant SaaS",
-      "summary": "Built modular admin, client, and demo experiences for a scalable SaaS platform serving restaurant operations across multiple branches.",
-      "highlights": [
-        "Created reusable UI patterns for a multi-surface SaaS product.",
-        "Optimized rendering and API interactions to handle high-traffic, concurrency-heavy flows."
-      ],
-      "links": [
+    "impactStats": [
         {
-          "label": "Live Demo",
-          "href": "https://qr-dine.vercel.app/"
+            "label": "API response time — 10s to 300ms",
+            "value": "97%"
         },
         {
-          "label": "GitHub",
-          "href": "https://github.com/Pratish10/qr-dine"
+            "label": "throughput at 500+ concurrent users",
+            "value": "10×"
+        },
+        {
+            "label": "product records per pipeline sync (ByBar)",
+            "value": "20M"
+        },
+        {
+            "label": "end-to-end Azure pipeline latency",
+            "value": "<4s"
         }
-      ]
-    }
-  ],
-  "capabilityGroups": [
-    {
-      "title": "Backend & APIs",
-      "items": ["Node.js", "Express", "Flask", ".NET (C# APIs)", "REST APIs", "MongoDB", "PostgreSQL"]
+    ],
+    "experiences": [
+        {
+            "id": 1,
+            "company": "Qwalton Private Limited",
+            "role": "Full Stack Engineer",
+            "duration": "Sep 2025 – Present",
+            "location": "Bengaluru, Karnataka",
+            "summary": "Production fintech platform serving 80–100 daily active users with sub-second latency SLAs across 4 broker integrations. Backend rebuilt from Node.js to .NET Core Clean Architecture.",
+            "bullets": [
+                "Maintain and extend a production AI-powered trading platform integrating 4 brokers, serving 80–100 daily active users at peak concurrency — sustaining strict uptime and sub-second latency requirements across critical financial order-execution workflows.",
+                "Architected a full backend rebuild from Node.js to .NET Core (C#) Clean Architecture — introduced MongoDB indexing, split monolithic data structures into relational models, redesigned REST endpoints with async patterns and inbuilt caching, and implemented multi-threaded order execution supporting 500+ concurrent users across 4 brokers simultaneously — delivering 10× throughput improvement and cutting API response from 10s → 300ms.",
+                "Cut trading UI page load from 10s → 1s through React component-level optimisation, Redux state normalisation, TypeScript API batching, and broker market data caching.",
+                "Designed and delivered an end-to-end Azure integration pipeline for ByBar (Netherlands) — 10–20 million product records per sync: XSLT transformation → Canonical Data Model → Blob Storage → Service Bus → downstream — end-to-end under 4 seconds, fully deployed via Azure Bicep and Azure DevOps YAML pipelines."
+            ],
+            "stack": [".NET Core (C#)", "ASP.NET Core", "Python", "React", "TypeScript", "Azure Logic Apps", "Service Bus", "Blob Storage", "Azure Bicep", "APIM", "Event Grid"]
+        },
+        {
+            "id": 2,
+            "company": "Celstream Technologies",
+            "role": "Software Engineer",
+            "duration": "Nov 2023 – Sep 2025",
+            "location": "Bengaluru, Karnataka",
+            "summary": "Full-cycle feature ownership across React, Node.js, and WebSockets — from architecture diagnosis through production release. Recognised company-wide for UI overhaul and Go.js canvas engineering.",
+            "bullets": [
+                "Proposed and delivered a complete UI architecture overhaul — redesigned a complex nested-data interface after diagnosing critical layout breakdowns under real data load; recognised company-wide for ownership from problem identification through production release.",
+                "Engineered an interactive node-flipping feature on a Go.js canvas diagram — a complex rendering challenge involving canvas state management and real-time DOM interaction, delivered end-to-end as sole owner.",
+                "Reduced frontend bundle from 2.4MB → 1.8MB (25% reduction) by introducing functional component architecture, code splitting, and async request optimisation on a legacy codebase.",
+                "Mentored 2 junior engineers to production readiness within 4 weeks — structured code reviews, Git workflow standards, and debugging frameworks; reduced first-deploy defect rate across the team."
+            ],
+            "stack": ["Node.js", "React", "TypeScript", "WebSockets", "Python (Flask)", "Docker", "GitHub Actions", "CI/CD"]
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": "ByBar Azure Integration Pipeline",
+            "tag": "Enterprise Azure Integration",
+            "summary": "End-to-end Azure integration pipeline for a Netherlands fashion brand — processing 10–20 million product records per sync with end-to-end latency under 4 seconds.",
+            "highlights": [
+                "Designed recurrence-triggered ingestion → XSLT transformation → Canonical Data Model → Blob Storage → Service Bus → downstream system.",
+                "Deployed entire integration infrastructure as code using Azure Bicep and Azure DevOps YAML pipelines."
+            ],
+            "links": []
+        },
+        {
+            "id": 2,
+            "name": "MyAlgoAI",
+            "tag": "Multi-Broker Trading Platform",
+            "summary": "Production .NET C# trading platform integrating 4 brokers with real-time WebSocket frontend, multi-threaded order execution, and full authentication architecture.",
+            "highlights": [
+                "Rebuilt backend from Node.js to .NET Core Clean Architecture — API response from 10s → 300ms.",
+                "Designed access + refresh token system, RBAC, and broker-level session isolation replacing an insecure legacy auth layer."
+            ],
+            "links": []
+        },
+        {
+            "id": 3,
+            "name": "rsvp.kim",
+            "tag": "Open Source Contribution",
+            "summary": "Contributed full card and email customization, step validation, mobile previews, and UI improvements to the event creation flow for Team Shiksha.",
+            "highlights": [
+                "Delivered production-quality UI features in an external codebase — collaborative open source engineering."
+            ],
+            "links": [
+                {
+                    "label": "View Project",
+                    "href": "https://rsvp.kim"
+                }
+            ]
+        }
+    ],
+    "capabilityGroups": [
+        {
+            "title": "Backend & Runtime",
+            "items": [".NET Core (C#)", "ASP.NET Core", "Clean Architecture", "CQRS", "Python (FastAPI)", "REST API design", "Async patterns", "Microservices"]
+        },
+        {
+            "title": "Azure Integration",
+            "items": ["Logic Apps", "Service Bus", "Blob Storage", "API Management", "Event Grid", "Container Apps", "XSLT", "Canonical Data Model", "Bicep (IaC)", "Azure DevOps Pipelines"]
+        },
+        {
+            "title": "Frontend & Runtime",
+            "items": ["React", "Next.js", "TypeScript", "Redux", "WebSockets", "JavaScript (ES6+)"]
+        },
+        {
+            "title": "Data & Storage",
+            "items": ["PostgreSQL", "MongoDB", "Azure Blob Storage", "SQL"]
+        },
+        {
+            "title": "Languages",
+            "items": ["C#", "Python", "TypeScript", "JavaScript", "SQL"]
+        }
+    ],
+    "certifications": [
+        {
+            "id": 1,
+            "title": "Microsoft Certified: Azure Fundamentals (AZ-900)",
+            "issuer": "Microsoft",
+            "date": "May 2026",
+            "href": "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
+        },
+        {
+            "id": 2,
+            "title": "React - The Complete Guide 2023",
+            "issuer": "Udemy",
+            "date": "Nov 2023",
+            "href": "https://www.udemy.com/certificate/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd/"
+        }
+    ],
+    "recognition": [
+        "Recognised at Celstream Technologies for proposing and delivering a complete UI architecture overhaul — ownership from problem identification through production release."
+    ],
+    "education": {
+        "school": "Shri Shankaracharya Technical Campus, India",
+        "degree": "Bachelor of Technology in Information Technology",
+        "duration": "2019 – 2023",
+        "score": "8.3 CGPA"
     },
-    {
-      "title": "Cloud & DevOps",
-      "items": ["AWS (EC2, S3)", "Docker", "GitHub Actions", "Deployment Workflows"]
+    "socialLinks": [
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/pratish-ninawe",
+            "icon": "Linkedin"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/Pratish10",
+            "icon": "Github"
+        },
+        {
+            "platform": "Email",
+            "url": "mailto:pratish.1006@gmail.com",
+            "icon": "Mail"
+        }
+    ],
+    "seo": {
+        "title": "Pratish Ninawe | Backend & Azure Integration Engineer",
+        "description": "Backend and Azure integration engineer with 2.5 years in production fintech systems. .NET Core, Azure Logic Apps, Service Bus, Python, React. Based in Bengaluru — open to Senior Backend, Azure Integration, and AI Engineering roles.",
+        "keywords": [
+            "Pratish Ninawe",
+            "Backend Engineer",
+            "Azure Integration Engineer",
+            ".NET Core Engineer",
+            "C# Developer",
+            "Azure Logic Apps",
+            "Service Bus",
+            "Python Developer",
+            "Fintech Backend",
+            "React Developer",
+            "Bengaluru Software Engineer",
+            "ASP.NET Core",
+            "Azure Bicep",
+            "Enterprise Integration"
+        ]
     },
-    {
-      "title": "Frontend Systems",
-      "items": ["React", "Next.js", "TypeScript", "JavaScript (ES6+)", "Redux"]
-    },
-    {
-      "title": "Performance & Testing",
-      "items": ["Lighthouse", "Jest", "React Testing Library", "Bundle Optimization", "Performance Tuning"]
-    },
-    {
-      "title": "Architecture & System Design",
-      "items": ["System Design", "Scalable Architecture", "Real-Time Data Flows", "Code Reviews", "Technical Mentoring"]
-    }
-  ],
-  "certifications": [
-    {
-      "id": 1,
-      "title": "React - The Complete Guide 2023",
-      "issuer": "Udemy",
-      "date": "Nov 2023",
-      "href": "https://www.udemy.com/certificate/UC-b0084af5-da7c-475f-8d8d-29e218fd64dd/"
-    },
-    {
-      "id": 2,
-      "title": "Python For Everybody",
-      "issuer": "Coursera",
-      "date": "Mar 2020",
-      "href": "https://drive.google.com/file/d/1GrTFTG8T79G-UtTvIGtK2lb0uVTu7Tng/view"
-    },
-    {
-      "id": 3,
-      "title": "Frontend Development",
-      "issuer": "Certification",
-      "date": "Feb 2022",
-      "href": "https://drive.google.com/file/d/1avjnvbK710RemRjkteK8hMn_cpELPgM4/view"
-    }
-  ],
-  "recognition": [
-    "Recognized at Celstream Technologies for delivering a major feature implementation, showcasing innovation and problem-solving skills."
-  ],
-  "education": {
-    "school": "Shri Shankaracharya Technical Campus, India",
-    "degree": "Bachelor of Technology in Information Technology",
-    "duration": "2019 - 2023",
-    "score": "8.3 CGPA"
-  },
-  "socialLinks": [
-    {
-      "platform": "LinkedIn",
-      "url": "https://www.linkedin.com/in/pratish-ninawe-6199b2220/",
-      "icon": "Linkedin"
-    },
-    {
-      "platform": "GitHub",
-      "url": "https://github.com/Pratish10",
-      "icon": "Github"
-    },
-    {
-      "platform": "Email",
-      "url": "mailto:pratish.1006@gmail.com",
-      "icon": "Mail"
-    }
-  ],
-  "seo": {
-    "title": "Pratish Ninawe | Full Stack Engineer - Backend, Cloud, Systems",
-    "description": "Recruiter-focused portfolio for Pratish Ninawe, a full stack engineer with backend systems, cloud, performance, and real-time application experience in Bengaluru.",
-    "keywords": [
-      "Pratish Ninawe",
-      "Full Stack Engineer",
-      "Backend Engineer",
-      "System Design",
-      "Cloud Engineer",
-      "AWS",
-      "React",
-      "Node.js",
-      "TypeScript",
-      "Bengaluru Software Engineer"
+    "engineeringProjects": [
+        {
+            "id": 1,
+            "slug": "bybar",
+            "name": "ByBar Azure Integration Pipeline",
+            "tag": "Enterprise Azure Integration",
+            "summary": "End-to-end Azure integration pipeline for a live Netherlands fashion brand — processing 10–20 million product records per sync with end-to-end latency under 4 seconds, fully deployed as infrastructure-as-code.",
+            "problem": "A Netherlands-based fashion enterprise (ByBar) needed a reliable, high-throughput pipeline to sync 10–20 million product records into their downstream product management system — with data transformation, schema validation, and guaranteed delivery, all repeatable across environments.",
+            "context": "B2B enterprise integration where data integrity and latency are business-critical. The client operates at EU enterprise scale — data volumes are large, transformation rules are complex (XSLT), and the integration must be environment-agnostic and deployable by pipeline, not manually.",
+            "myRole": "Sole architect and implementer — designed the integration architecture, wrote the XSLT transformations, defined the Canonical Data Model, configured all Azure services, and deployed everything via Bicep and Azure DevOps YAML pipelines.",
+            "responsibilities": [
+                "Designed end-to-end integration architecture: recurrence trigger → Logic App → XSLT transformation → Canonical Data Model → Azure Blob Storage → Azure Service Bus → downstream consumer",
+                "Wrote XSLT transformations to map source product schema to the Canonical Data Model — handling 10–20 million records per sync with structural validation",
+                "Configured and deployed Azure Logic Apps, Service Bus, Blob Storage, APIM, and Event Grid",
+                "Deployed entire integration infrastructure as code using Azure Bicep — repeatable, environment-agnostic release workflows across dev, staging, and production",
+                "Set up Azure DevOps Pipelines with YAML for automated deployment and release orchestration"
+            ],
+            "technologies": [".NET Core (C#)", "Azure Logic Apps", "Azure Service Bus", "Azure Blob Storage", "Azure API Management", "Azure Event Grid", "XSLT", "Canonical Data Model", "Azure Bicep", "Azure DevOps Pipelines"],
+            "architecture": "Recurrence-triggered Azure Logic App ingests the product feed, passes records through an XSLT transformation layer that maps source schema to a Canonical Data Model (CDM). Transformed records are written to Azure Blob Storage for durability, then published to Azure Service Bus for ordered, guaranteed delivery to the downstream product management system. The entire infrastructure — Logic Apps, APIM, Event Grid, Service Bus — is defined in Azure Bicep and deployed via Azure DevOps YAML pipelines for environment-agnostic, repeatable releases.",
+            "decisions": [
+                {
+                    "title": "XSLT Transformation vs. Code-Based Mapping",
+                    "situation": "The product records required complex structural transformation from the source schema to the Canonical Data Model. Two approaches were viable: declarative XSLT or imperative C# mapping code.",
+                    "optionA": "C# code-based mapping — explicit control, easier to unit test individual fields, familiar language for the team.",
+                    "optionB": "XSLT transformation — declarative, schema-portable, natively supported by Logic Apps without additional runtime dependencies.",
+                    "chosen": "B",
+                    "rationale": "XSLT integrates natively with Azure Logic Apps and is designed exactly for structured document transformation at this scale. Keeping transformation declarative and outside application code means schema changes are isolated and don't require redeployment of backend services.",
+                    "tradeoff": "XSLT is less familiar to most developers and harder to debug than C# code. Requires investment in XSLT tooling and understanding of XPath.",
+                    "result": "Transformation pipeline processes 10–20 million records per sync within the 4-second end-to-end SLA. Schema changes are applied without service redeployment."
+                },
+                {
+                    "title": "Bicep IaC vs. Manual Azure Portal Configuration",
+                    "situation": "The integration uses 5 Azure services. The question was whether to configure them through the Azure Portal or define them entirely as Infrastructure-as-Code using Bicep.",
+                    "optionA": "Azure Portal configuration — faster initial setup, no Bicep learning curve, sufficient for a single environment.",
+                    "optionB": "Azure Bicep IaC — all services defined declaratively, version-controlled, deployable to any environment via pipeline.",
+                    "chosen": "B",
+                    "rationale": "An EU enterprise client requires a production-grade, auditable, repeatable deployment. Manual portal configuration creates environment drift and makes disaster recovery and staging parity impossible to guarantee.",
+                    "tradeoff": "Bicep adds upfront authoring time and requires understanding ARM template structure. Worth it for any multi-environment or production-grade integration.",
+                    "result": "Entire integration stack — Logic Apps, APIM, Event Grid, Service Bus — deployable from a single Bicep + YAML pipeline run. Zero environment drift between staging and production."
+                }
+            ],
+            "challenges": [
+                "Handling 10–20 million records reliably within a 4-second SLA required careful choice of Service Bus partitioning and session handling to prevent message ordering issues at scale",
+                "XSLT transformation for deeply nested product schemas required iterative validation against real production data — source schema had undocumented edge cases that only surfaced at volume"
+            ],
+            "outcome": "Production integration pipeline serving a live EU enterprise client. 10–20 million product records per sync processed end-to-end in under 4 seconds. Entire infrastructure deployable via a single pipeline run — environment-agnostic, observable, repeatable.",
+            "metrics": ["10–20M product records per sync", "<4s end-to-end pipeline latency", "100% infrastructure as code via Azure Bicep", "Zero-touch deployment via Azure DevOps YAML"],
+            "lessonsLearned": [
+                "At enterprise data volumes, choosing the right Azure primitive (Service Bus vs Storage Queue vs Event Grid) is an architecture decision with significant downstream consequences — getting it right upfront saves re-architecture later",
+                "IaC from day one is not optional on multi-environment enterprise integrations — the overhead of Bicep authoring is repaid on the first staging → production deployment"
+            ],
+            "links": []
+        },
+        {
+            "id": 2,
+            "slug": "myalgoai",
+            "name": "MyAlgoAI",
+            "tag": "Multi-Broker Trading Platform",
+            "summary": "Production .NET C# trading platform serving 80–100 daily active users across 4 brokers — rebuilt from Node.js to Clean Architecture, API response from 10s → 300ms, full auth system designed from scratch.",
+            "problem": "A production trading platform had accumulated critical technical debt: Node.js backend with monolithic data structures, no multi-threading, 10-second API response times, and an insecure legacy auth layer — all under live financial users with sub-second latency expectations.",
+            "context": "Fintech production system where API latency directly affects trader response time to live market signals. The platform integrates 4 brokers and serves real-time order execution with strict uptime SLAs. Any downtime or latency spike has direct business impact.",
+            "myRole": "Backend lead — architected and implemented the full rebuild from Node.js to .NET Core, owned the authentication redesign, and built the multi-threaded order execution system.",
+            "responsibilities": [
+                "Architected migration from Node.js to .NET Core (C#) Clean Architecture — defined domain boundaries, application layer, and infrastructure separation",
+                "Introduced MongoDB indexing and split monolithic data structures into relational models with one-to-many relationships",
+                "Redesigned REST endpoints with async patterns and inbuilt caching",
+                "Implemented multi-threaded order execution supporting 500+ concurrent users placing orders across 4 brokers simultaneously",
+                "Designed and implemented access + refresh token architecture, RBAC, and broker-level session isolation — replacing an insecure legacy auth layer",
+                "Cut trading UI page load from 10s → 1s through React optimisation, Redux state normalisation, and broker market data caching"
+            ],
+            "technologies": [".NET Core (C#)", "ASP.NET Core", "Clean Architecture", "MongoDB", "React", "TypeScript", "WebSockets", "Redux", "JWT", "RBAC"],
+            "architecture": "Clean Architecture .NET Core backend separates domain logic from infrastructure. REST endpoints use async/await with inbuilt response caching. MongoDB documents are indexed and structured with one-to-many relationships for order and broker data. Multi-threaded order execution dispatches concurrent requests across 4 broker APIs without blocking. React frontend uses WebSocket streams for real-time trade data, Redux for normalised state, and TypeScript API batching for broker market data.",
+            "decisions": [
+                {
+                    "title": "Node.js → .NET Core: Full Rebuild vs. Incremental Refactor",
+                    "situation": "The Node.js backend had pervasive monolithic structure — data shapes, business logic, and infrastructure concerns deeply coupled. The question was whether to refactor incrementally or rebuild with a proper architecture.",
+                    "optionA": "Incremental refactor of existing Node.js — lower risk, gradual improvement, no big-bang rewrite risk.",
+                    "optionB": "Full rebuild in .NET Core Clean Architecture — clear domain boundaries, proper async model, type safety, and testability from the ground up.",
+                    "chosen": "B",
+                    "rationale": "The monolithic coupling meant any incremental refactor would carry the structural debt forward. Clean Architecture in .NET Core enabled proper separation of domain, application, and infrastructure layers — making multi-threading and caching safe to add without unintended side effects.",
+                    "tradeoff": "Full rebuild carries rewrite risk and requires feature parity validation against production. Mitigated by phased rollout with existing Node.js as fallback.",
+                    "result": "10× throughput improvement. API response from 10s → 300ms. Platform supporting 500+ concurrent users across 4 brokers with no regression in functionality."
+                },
+                {
+                    "title": "Auth Redesign: Access + Refresh Token vs. Session-Based",
+                    "situation": "The legacy auth layer was insecure and had no concept of broker-level session isolation — a critical risk for a multi-broker financial platform.",
+                    "optionA": "Server-side session store — stateful, easy to invalidate immediately, familiar pattern.",
+                    "optionB": "Access + refresh token architecture with RBAC and broker-level session isolation — stateless, horizontally scalable, granular authorization.",
+                    "chosen": "B",
+                    "rationale": "A multi-broker trading platform where different users have different broker permissions required token-level authorization claims. Broker-level session isolation is only achievable cleanly with JWTs carrying broker scope claims — sessions would require complex session-to-broker mapping.",
+                    "tradeoff": "Access tokens cannot be invalidated before expiry. Mitigated with short-lived access tokens (15min) and refresh token rotation with revocation on broker permission changes.",
+                    "result": "Clean, stateless authorization across all trading workflows. Broker-level session isolation enforced at the token claim level — no cross-broker data leakage possible."
+                }
+            ],
+            "challenges": [
+                "Migrating from Node.js to .NET Core without downtime required phased rollout — running both systems in parallel during transition",
+                "Multi-threaded order execution across 4 brokers required careful thread-safety design for shared state (broker connection pools, order books)"
+            ],
+            "outcome": "Production trading platform with 10× throughput improvement, 97% API latency reduction (10s → 300ms), sub-second UI load, and secure multi-broker authorization. Serving 80–100 daily active users under live financial conditions.",
+            "metrics": ["10s → 300ms API response (97% reduction)", "10× throughput at 500+ concurrent users", "10s → 1s trading UI load", "4 brokers integrated with isolation"],
+            "lessonsLearned": [
+                "Clean Architecture is not just a pattern preference — for a fintech system with multi-threading and multiple broker integrations, proper domain/infrastructure separation is what makes safe concurrent programming achievable",
+                "JWT broker-level session isolation must be designed before the first line of auth code is written — retrofitting broker claims onto an existing token structure is error-prone under production pressure"
+            ],
+            "links": []
+        },
+        {
+            "id": 3,
+            "slug": "qr-dine",
+            "name": "QR Dine",
+            "tag": "Multi-Branch Restaurant SaaS",
+            "summary": "Scalable multi-tenant SaaS for restaurant management — JWT auth, RBAC, multi-branch ordering, and high-concurrency optimisation.",
+            "problem": "Restaurant chains needed a unified platform to manage QR-code-based ordering across multiple branches with separate admin and customer interfaces, secure authentication, and the ability to handle concurrent ordering load.",
+            "context": "Built as an independent project to demonstrate full-stack SaaS architecture. QR Dine serves restaurant administrators and end customers across multiple branches from a single multi-tenant platform.",
+            "myRole": "Sole developer — designed and built the full stack from data model through API design to frontend interfaces.",
+            "responsibilities": [
+                "Designed the multi-tenant data model supporting multiple restaurant branches with isolated data",
+                "Implemented JWT-based authentication and role-based access control for admin and customer roles",
+                "Built Next.js admin interface and React client interface with shared component patterns",
+                "Optimised Node.js API and MongoDB queries for high-concurrency ordering scenarios"
+            ],
+            "technologies": ["React", "Next.js", "Node.js", "MongoDB", "JWT", "TypeScript", "RBAC"],
+            "architecture": "Multi-tenant Next.js frontend with separate admin and client surfaces shares a Node.js API layer. MongoDB stores restaurant, menu, and order data partitioned by branch. JWT tokens carry role claims (admin/customer) validated on every API route.",
+            "decisions": [
+                {
+                    "title": "JWT + RBAC vs. Session-Based Authentication",
+                    "situation": "Two separate frontend apps (admin and customer) sharing a single API without shared session state.",
+                    "optionA": "Server-side session store — stateful, easy to invalidate, requires shared session infrastructure between frontend surfaces.",
+                    "optionB": "JWT with role claims — stateless, works natively across separate frontend origins without session sharing.",
+                    "chosen": "B",
+                    "rationale": "Two frontend apps sharing one API without a shared session store made stateless JWT the natural fit. Role claims embedded in the token meant the API could authorize any request without a session lookup.",
+                    "tradeoff": "JWTs cannot be invalidated before expiry. Mitigated with short expiry (15 min) and refresh token rotation.",
+                    "result": "Clean role-based access control across admin and customer surfaces. API authorization consistent and stateless."
+                }
+            ],
+            "challenges": [
+                "Multi-tenant data isolation required careful MongoDB schema design to prevent cross-branch data leakage"
+            ],
+            "outcome": "Live, publicly accessible SaaS platform demonstrating full multi-tenant architecture, secure authentication, and production-ready API design.",
+            "metrics": ["JWT + RBAC across multi-role SaaS", "Multi-tenant data isolation at schema level"],
+            "lessonsLearned": [
+                "Multi-tenant data isolation should be a schema-level constraint — moving it to application-level filter creates query complexity and security surface area"
+            ],
+            "links": [
+                {
+                    "label": "Live Demo",
+                    "href": "https://qr-dine.vercel.app/"
+                },
+                {
+                    "label": "GitHub",
+                    "href": "https://github.com/Pratish10/qr-dine"
+                }
+            ]
+        }
+    ],
+    "architectureNodes": [
+        {
+            "id": "client",
+            "label": "Client",
+            "icon": "Globe",
+            "description": "Browser-based interfaces built with React, Next.js, and TypeScript. Real-time data via WebSocket streams. State managed with Redux for complex concurrent data (trading dashboards). UI optimised for sub-second perceived load.",
+            "technologies": ["React", "Next.js", "TypeScript", "Redux", "WebSockets"],
+            "relatedProjects": ["MyAlgoAI", "QR Dine"]
+        },
+        {
+            "id": "api",
+            "label": "API Layer",
+            "icon": "Zap",
+            "description": "ASP.NET Core REST endpoints with async patterns, inbuilt caching, and JWT authorization. API Management (APIM) for enterprise integration — routing, throttling, and policy enforcement for Azure-hosted integrations.",
+            "technologies": ["ASP.NET Core", "REST APIs", "Azure APIM", "JWT", "Async/Await", "Response Caching"],
+            "relatedProjects": ["MyAlgoAI", "ByBar Azure Integration Pipeline"]
+        },
+        {
+            "id": "backend",
+            "label": "Backend Services",
+            "icon": "Server",
+            "description": "Clean Architecture .NET Core services with domain/application/infrastructure separation. CQRS patterns for command and query separation. Python (FastAPI, Flask) for scripting and data processing services. Multi-threaded execution for concurrent broker order dispatch.",
+            "technologies": [".NET Core (C#)", "Clean Architecture", "CQRS", "Python (FastAPI)", "Multi-threading"],
+            "relatedProjects": ["MyAlgoAI", "ByBar Azure Integration Pipeline"]
+        },
+        {
+            "id": "azure",
+            "label": "Azure Integration",
+            "icon": "Cloud",
+            "description": "Event-driven integration layer built on Azure PaaS. Logic Apps orchestrate workflow pipelines. Service Bus provides ordered, guaranteed message delivery. Event Grid routes events to consumers. All infrastructure defined in Bicep and deployed via Azure DevOps YAML pipelines.",
+            "technologies": ["Azure Logic Apps", "Azure Service Bus", "Azure Blob Storage", "Event Grid", "Azure Bicep", "Azure DevOps Pipelines", "XSLT", "Canonical Data Model"],
+            "relatedProjects": ["ByBar Azure Integration Pipeline"]
+        },
+        {
+            "id": "data",
+            "label": "Data Layer",
+            "icon": "Database",
+            "description": "MongoDB with indexing and one-to-many relational models for trading data. PostgreSQL for relational workloads requiring complex queries. Azure Blob Storage for large-scale data durability in integration pipelines (10–20M records).",
+            "technologies": ["MongoDB", "PostgreSQL", "Azure Blob Storage", "SQL"],
+            "relatedProjects": ["MyAlgoAI", "ByBar Azure Integration Pipeline", "QR Dine"]
+        }
+    ],
+    "engineeringDecisions": [
+        {
+            "title": "Node.js → .NET Core: Full Rebuild vs. Incremental Refactor",
+            "situation": "The MyAlgoAI trading backend had deeply coupled monolithic structure in Node.js — 10-second API responses, no multi-threading, and pervasive coupling between business logic and infrastructure. The question was how to fix it.",
+            "optionA": "Incremental Node.js refactor — lower risk, gradual improvement, avoids big-bang rewrite. Tech debt addressed layer by layer.",
+            "optionB": "Full rebuild in .NET Core Clean Architecture — proper domain/application/infrastructure separation from the ground up, enabling safe multi-threading and caching.",
+            "chosen": "B",
+            "rationale": "The monolithic coupling meant any incremental refactor would carry the structural debt forward. Multi-threaded order execution is only safe when domain logic is cleanly separated from infrastructure — something impossible to retrofit without a structural break.",
+            "tradeoff": "Full rebuild carries rewrite risk and requires feature parity validation. Mitigated by phased rollout with the existing Node.js backend as a live fallback during transition.",
+            "result": "10× throughput improvement. API response from 10s → 300ms. Platform now handles 500+ concurrent users across 4 brokers."
+        },
+        {
+            "title": "XSLT Transformation vs. C# Code Mapping for ByBar Pipeline",
+            "situation": "ByBar's product records required complex structural transformation from source schema to a Canonical Data Model. 10–20 million records per sync. Two approaches: declarative XSLT or imperative C# mapping code.",
+            "optionA": "C# code-based mapping — explicit control, unit-testable field by field, familiar language. Schema changes require code changes and redeployment.",
+            "optionB": "XSLT transformation — declarative, schema-portable, natively integrated in Azure Logic Apps. Schema changes are XSLT updates, not service redeployments.",
+            "chosen": "B",
+            "rationale": "XSLT integrates natively with Azure Logic Apps at no additional runtime cost. Keeping transformation declarative and outside application code means the transformation layer can be updated independently — critical for an enterprise client where product schema evolves.",
+            "tradeoff": "XSLT is less familiar than C# and harder to debug. Requires XPath proficiency and specialist tooling for development.",
+            "result": "Transformation pipeline processes 10–20M records within the 4-second SLA. Schema updates deployed without backend service changes or downtime."
+        },
+        {
+            "title": "Bicep IaC vs. Manual Azure Portal Configuration",
+            "situation": "ByBar integration uses 5 Azure services across multiple environments. Manual portal configuration is fast for prototyping but creates environment drift — staging and production diverge silently.",
+            "optionA": "Azure Portal configuration — faster initial setup, no Bicep authoring overhead. Acceptable for single-environment proof-of-concept.",
+            "optionB": "Azure Bicep IaC — all services version-controlled, deployable to any environment from a single pipeline run, auditable and repeatable.",
+            "chosen": "B",
+            "rationale": "An EU enterprise client requires production-grade, auditable, repeatable deployment. Manual configuration is a maintenance liability — impossible to audit, impossible to reproduce exactly across environments, and unacceptable under enterprise SLAs.",
+            "tradeoff": "Bicep adds authoring time and requires understanding ARM template structure. This upfront cost is repaid on the first multi-environment deployment.",
+            "result": "Full integration stack deployable from a single Bicep + YAML pipeline run. Zero environment drift. Staging mirrors production exactly."
+        }
+    ],
+    "technologyEvidence": [
+        {
+            "technology": ".NET Core (C#) / Clean Architecture",
+            "category": "backend",
+            "usedIn": ["MyAlgoAI"],
+            "whatBuilt": "Full backend rebuild from Node.js — domain/application/infrastructure layers, async patterns, multi-threaded order execution across 4 brokers"
+        },
+        {
+            "technology": "ASP.NET Core",
+            "category": "backend",
+            "usedIn": ["MyAlgoAI"],
+            "whatBuilt": "REST API endpoints with inbuilt response caching, JWT middleware, and async request handling"
+        },
+        {
+            "technology": "Azure Logic Apps",
+            "category": "integration",
+            "usedIn": ["ByBar Azure Integration Pipeline"],
+            "whatBuilt": "Recurrence-triggered orchestration pipeline for 10–20M product record ingestion and transformation"
+        },
+        {
+            "technology": "Azure Service Bus",
+            "category": "integration",
+            "usedIn": ["ByBar Azure Integration Pipeline"],
+            "whatBuilt": "Ordered, guaranteed message delivery from transformation layer to downstream product management system"
+        },
+        {
+            "technology": "Azure Blob Storage",
+            "category": "cloud",
+            "usedIn": ["ByBar Azure Integration Pipeline"],
+            "whatBuilt": "Durable intermediate storage for transformed product records before Service Bus publication"
+        },
+        {
+            "technology": "Azure Bicep (IaC)",
+            "category": "devops",
+            "usedIn": ["ByBar Azure Integration Pipeline"],
+            "whatBuilt": "Full integration stack defined as code — Logic Apps, APIM, Event Grid, Service Bus deployed via Azure DevOps YAML pipeline"
+        },
+        {
+            "technology": "XSLT / Canonical Data Model",
+            "category": "integration",
+            "usedIn": ["ByBar Azure Integration Pipeline"],
+            "whatBuilt": "Declarative transformation of source product schema to CDM for 10–20M records per sync within 4-second SLA"
+        },
+        {
+            "technology": "Python (FastAPI / Flask)",
+            "category": "backend",
+            "usedIn": ["MyAlgoAI", "Celstream Technologies"],
+            "whatBuilt": "Backend trade logic services and REST API integrations for broker data flows"
+        },
+        {
+            "technology": "React + TypeScript",
+            "category": "frontend",
+            "usedIn": ["MyAlgoAI", "QR Dine"],
+            "whatBuilt": "Real-time trading dashboards with WebSocket streams; multi-tenant SaaS admin/client interfaces"
+        },
+        {
+            "technology": "WebSockets",
+            "category": "backend",
+            "usedIn": ["MyAlgoAI", "Celstream Technologies"],
+            "whatBuilt": "Server-push real-time streams for live trading data — sub-100ms update delivery"
+        },
+        {
+            "technology": "JWT + RBAC",
+            "category": "backend",
+            "usedIn": ["MyAlgoAI", "QR Dine"],
+            "whatBuilt": "Access + refresh token architecture with role claims and broker-level session isolation"
+        },
+        {
+            "technology": "MongoDB",
+            "category": "database",
+            "usedIn": ["MyAlgoAI", "QR Dine"],
+            "whatBuilt": "Indexed document store with relational one-to-many models — 90% latency reduction via indexing redesign"
+        },
+        {
+            "technology": "PostgreSQL",
+            "category": "database",
+            "usedIn": ["Celstream Technologies"],
+            "whatBuilt": "Optimised query patterns for metric aggregation in real-time monitoring dashboards"
+        },
+        {
+            "technology": "GitHub Actions / Azure DevOps",
+            "category": "devops",
+            "usedIn": ["ByBar Azure Integration Pipeline", "QR Dine"],
+            "whatBuilt": "CI/CD pipelines — automated build, test, lint, and deploy to production and GitHub Pages"
+        },
+        {
+            "technology": "CQRS",
+            "category": "backend",
+            "usedIn": [],
+            "whatBuilt": "Listed as applied pattern — applied in Clean Architecture backend design",
+            "placeholder": true
+        }
+    ],
+    "openSourceContributions": [
+        {
+            "project": "rsvp.kim",
+            "organization": "Team Shiksha",
+            "url": "https://rsvp.kim",
+            "contribution": "Contributed full card and email customization, step validation, mobile previews, and UI improvements to the event creation flow.",
+            "changelogUrl": "https://rsvp.kim/changelog"
+        }
+    ],
+    "engineeringPrinciples": [
+        {
+            "name": "Architecture First",
+            "icon": "Layers",
+            "statement": "Structural problems cannot be solved by adding features. Fix the architecture or carry the debt forever.",
+            "evidence": "MyAlgoAI: Node.js → .NET Core Clean Architecture rebuild. Incremental refactor was not an option — monolithic coupling made multi-threading unsafe. Result: 10× throughput."
+        },
+        {
+            "name": "IaC or It Didn't Happen",
+            "icon": "Wrench",
+            "statement": "Infrastructure defined outside version control is infrastructure you cannot trust, reproduce, or audit.",
+            "evidence": "ByBar: entire Azure integration stack (Logic Apps, APIM, Event Grid, Service Bus) defined in Bicep. Staging mirrors production exactly. Deployed by pipeline, not by hand."
+        },
+        {
+            "name": "Observability Is Not Optional",
+            "icon": "Eye",
+            "statement": "A system you cannot observe is a system you cannot debug or improve. Instrument before you optimize.",
+            "evidence": "MyAlgoAI: API latency profiling identified the specific MongoDB query patterns responsible for 10-second responses — targeted fix, not broad caching."
+        },
+        {
+            "name": "Design for Failure",
+            "icon": "Shield",
+            "statement": "Network failures, token expiry, and concurrent writes are not edge cases. They are operational reality.",
+            "evidence": "MyAlgoAI: refresh token rotation with revocation on broker permission changes. ByBar: Service Bus for guaranteed delivery — messages survive downstream consumer failures."
+        }
     ]
-  }
 }

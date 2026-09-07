@@ -1,24 +1,26 @@
-﻿import * as React from 'react';
+import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-	'inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full border text-sm font-semibold tracking-[0.08em] uppercase transition-all duration-300 disabled:pointer-events-none disabled:opacity-50',
+	'mono inline-flex items-center justify-center gap-2 whitespace-nowrap rounded border text-xs font-medium tracking-[0.12em] uppercase transition-all duration-200 disabled:pointer-events-none disabled:opacity-50',
 	{
 		variants: {
 			variant: {
-				default: 'border-transparent bg-[var(--burnt-orange)] px-6 text-slate-950 shadow-[0_18px_50px_rgba(231,111,81,0.25)] hover:-translate-y-0.5 hover:bg-[var(--coral)]',
-				outline: 'border-[color:var(--line-strong)] bg-white/5 px-6 text-[var(--ink)] hover:-translate-y-0.5 hover:bg-white/8',
-				ghost: 'border-transparent bg-transparent px-4 text-[var(--ink)] hover:bg-white/6',
-				link: 'border-transparent bg-transparent px-0 text-[var(--warm-sand)] underline-offset-4 hover:underline',
+				default:
+					'border-[color:var(--accent)] bg-[color:var(--accent)] px-6 text-[#0c1210] shadow-[0_0_24px_rgba(0,212,160,0.2)] hover:bg-[color:var(--coral)] hover:shadow-[0_0_32px_rgba(0,255,179,0.25)]',
+				outline:
+					'border-[color:var(--line-strong)] bg-transparent px-6 text-[var(--ink)] hover:border-[color:var(--accent)] hover:bg-[color:var(--signal-muted)] hover:text-[color:var(--accent)]',
+				ghost: 'border-transparent bg-transparent px-4 text-[var(--muted-ink)] hover:bg-[color:var(--signal-muted)] hover:text-[color:var(--accent)]',
+				link: 'border-transparent bg-transparent px-0 text-[color:var(--accent)] underline-offset-4 hover:underline',
 				destructive: 'border-transparent bg-red-500 px-6 text-white hover:bg-red-400',
-				secondary: 'border-transparent bg-white/10 px-6 text-[var(--ink)] hover:bg-white/16',
+				secondary: 'border-[color:var(--line)] bg-[color:var(--signal-muted)] px-6 text-[color:var(--accent)] hover:border-[color:var(--line-strong)]',
 			},
 			size: {
-				default: 'h-11 px-5',
-				sm: 'h-9 px-4 text-xs',
-				lg: 'h-12 px-6 text-sm',
+				default: 'h-10 px-5',
+				sm: 'h-8 px-3 text-[10px]',
+				lg: 'h-11 px-6',
 				icon: 'h-10 w-10',
 			},
 		},

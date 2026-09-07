@@ -1,4 +1,4 @@
-﻿import { type Metadata } from 'next';
+import { type Metadata } from 'next';
 import { portfolioData } from '@/data/portfolio';
 
 const BASE_URL = 'https://pratish10.github.io/portfolio';
@@ -26,7 +26,7 @@ export const siteConfig: Metadata = {
 				url: `${BASE_URL}/Pratish.webp`,
 				width: 1200,
 				height: 630,
-				alt: `${portfolioData.personal.fullName} portfolio preview`,
+				alt: `${portfolioData.personal.fullName} — Backend & Azure Integration Engineer`,
 			},
 		],
 	},
@@ -37,7 +37,8 @@ export const siteConfig: Metadata = {
 		images: [`${BASE_URL}/Pratish.webp`],
 	},
 	icons: {
-		icon: `${BASE_URL}/Pratish.webp`,
+		icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+		shortcut: '/favicon.svg',
 	},
 	category: 'technology',
 };
