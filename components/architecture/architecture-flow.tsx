@@ -49,12 +49,16 @@ const ArchitectureFlow = ({ nodes }: { nodes: ArchitectureNode[] }) => {
 									<div className='flex items-center gap-3'>
 										<span
 											className={`flex h-8 w-8 items-center justify-center rounded border transition ${
-												isActive ? 'border-[color:var(--accent)] bg-[color:var(--signal-muted)]' : 'border-[color:var(--line)] bg-transparent'
+												isActive
+													? 'border-[color:var(--accent)] bg-[color:var(--signal-muted)]'
+													: 'border-[color:var(--line)] bg-transparent'
 											}`}
 										>
 											<Icon className={`h-3.5 w-3.5 ${isActive ? 'text-[color:var(--accent)]' : 'text-[var(--muted-ink)]'}`} />
 										</span>
-										<span className={`mono text-xs tracking-[0.12em] ${isActive ? 'text-[color:var(--accent)]' : 'text-[var(--ink)]'}`}>
+										<span
+											className={`mono text-xs tracking-[0.12em] ${isActive ? 'text-[color:var(--accent)]' : 'text-[var(--ink)]'}`}
+										>
 											{node.label.toUpperCase()}
 										</span>
 									</div>

@@ -8,7 +8,10 @@ const ProjectStory = ({ project }: { project: EngineeringProject }) => {
 	return (
 		<main className='mx-auto max-w-4xl px-5 py-12 sm:px-6 lg:px-8'>
 			{/* Back nav */}
-			<Link href='/' className='mono inline-flex items-center gap-2 text-[10px] tracking-[0.15em] text-[var(--muted-ink)] transition hover:text-[color:var(--accent)]'>
+			<Link
+				href='/'
+				className='mono inline-flex items-center gap-2 text-[10px] tracking-[0.15em] text-[var(--muted-ink)] transition hover:text-[color:var(--accent)]'
+			>
 				<ArrowLeft className='h-3.5 w-3.5' />
 				BACK TO WORK
 			</Link>
@@ -148,7 +151,10 @@ const ProjectStory = ({ project }: { project: EngineeringProject }) => {
 
 			{/* Footer nav */}
 			<div className='mt-16 border-t border-[color:var(--line)] pt-8'>
-				<Link href='/' className='mono inline-flex items-center gap-2 text-[10px] tracking-[0.15em] text-[var(--muted-ink)] transition hover:text-[color:var(--accent)]'>
+				<Link
+					href='/'
+					className='mono inline-flex items-center gap-2 text-[10px] tracking-[0.15em] text-[var(--muted-ink)] transition hover:text-[color:var(--accent)]'
+				>
 					<ArrowLeft className='h-3.5 w-3.5' />
 					BACK TO ALL WORK
 				</Link>

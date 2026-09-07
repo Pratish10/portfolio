@@ -6,7 +6,8 @@ _Created: 2026-09-07_
 
 **Simple on the surface. Deep underneath.**
 
-The home page is designed for recruiters who skim. Depth is available for anyone who wants it — through expanding sections, architecture nodes, and project detail pages — but never forced on someone who doesn't need it.
+The home page is designed for recruiters who skim. Depth is available for anyone who wants it — through expanding sections, architecture nodes, and
+project detail pages — but never forced on someone who doesn't need it.
 
 ---
 
@@ -140,13 +141,13 @@ Breadcrumb: ← Back to Work
 
 The key interaction pattern: surface-level information for everyone, depth available on demand.
 
-| Element | Surface | Depth trigger | Depth content |
-|---------|---------|--------------|---------------|
-| Architecture Flow node | Label + icon | Click | Description, technologies, related projects |
-| Project card | Name + tag + summary + metric | "Full story →" link | Full /work/[slug] page |
-| Technology badge | Tech name | — | "used in: [project]" inline (always visible) |
-| Engineering decision | Title + one-line | Always expanded | A vs B comparison, rationale, trade-off |
-| Principles | Icon + name | — | Brief real example (always visible) |
+| Element                | Surface                       | Depth trigger       | Depth content                                |
+| ---------------------- | ----------------------------- | ------------------- | -------------------------------------------- |
+| Architecture Flow node | Label + icon                  | Click               | Description, technologies, related projects  |
+| Project card           | Name + tag + summary + metric | "Full story →" link | Full /work/[slug] page                       |
+| Technology badge       | Tech name                     | —                   | "used in: [project]" inline (always visible) |
+| Engineering decision   | Title + one-line              | Always expanded     | A vs B comparison, rationale, trade-off      |
+| Principles             | Icon + name                   | —                   | Brief real example (always visible)          |
 
 No modals. No heavy overlays. No confusing split-pane interfaces.
 
@@ -175,11 +176,13 @@ No modals. No heavy overlays. No confusing split-pane interfaces.
 ## Copy Voice
 
 Follows `.agents/product-marketing-context.md`:
+
 - **Confident, polished, grounded** — not boastful
 - **Direct, recruiter-readable** — no jargon for jargon's sake
 - **Technically credible** — specifics, not vague claims
 
 Contact section framing:
+
 ```
 Have a backend problem?
 

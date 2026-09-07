@@ -8,14 +8,18 @@ const ContactSection = ({ cta }: { cta: PortfolioData['cta'] }) => {
 				<p className='mono text-[10px] uppercase tracking-[0.32em] text-[color:var(--accent)]'>Get in touch</p>
 				<h2 className='mt-4 max-w-xl text-4xl font-bold text-[var(--ink)] sm:text-5xl'>Have a backend problem?</h2>
 				<ul className='mt-6 space-y-2'>
-					{['Build an API?', 'Connect two systems?', 'Move data reliably?', 'Design a backend architecture?', 'Optimize a slow service?'].map(
-						(item) => (
-							<li key={item} className='flex items-center gap-3 text-[var(--muted-ink)]'>
-								<span className='mono text-[color:var(--accent)]'>›</span>
-								{item}
-							</li>
-						)
-					)}
+					{[
+						'Build an API?',
+						'Connect two systems?',
+						'Move data reliably?',
+						'Design a backend architecture?',
+						'Optimize a slow service?',
+					].map((item) => (
+						<li key={item} className='flex items-center gap-3 text-[var(--muted-ink)]'>
+							<span className='mono text-[color:var(--accent)]'>›</span>
+							{item}
+						</li>
+					))}
 				</ul>
 				<p className='mono mt-6 text-sm tracking-[0.1em] text-[color:var(--accent)]'>Let&apos;s talk.</p>
 				<div className='mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap'>

@@ -19,71 +19,71 @@ All content lives in `public/pratish.json`, typed by `types/portfolio-types.ts`.
 ```typescript
 // Engineering project with full narrative depth
 interface EngineeringProject {
-    id: number;
-    slug: string;           // URL slug for /work/[slug]
-    name: string;
-    tag: string;            // e.g. "Automated Trading Platform"
-    summary: string;        // one-sentence recruiter summary
-    problem: string;        // what was broken or missing
-    context: string;        // why the system mattered
-    myRole: string;         // what Pratish personally owned
-    responsibilities: string[];
-    technologies: string[];
-    architecture: string;   // prose description of system architecture
-    decisions: EngineeringDecision[];
-    challenges: string[];
-    outcome: string;
-    metrics: string[];
-    lessonsLearned: string[];
-    links: { label: string; href: string }[];
+	id: number;
+	slug: string; // URL slug for /work/[slug]
+	name: string;
+	tag: string; // e.g. "Automated Trading Platform"
+	summary: string; // one-sentence recruiter summary
+	problem: string; // what was broken or missing
+	context: string; // why the system mattered
+	myRole: string; // what Pratish personally owned
+	responsibilities: string[];
+	technologies: string[];
+	architecture: string; // prose description of system architecture
+	decisions: EngineeringDecision[];
+	challenges: string[];
+	outcome: string;
+	metrics: string[];
+	lessonsLearned: string[];
+	links: { label: string; href: string }[];
 }
 
 // A vs B decision card
 interface EngineeringDecision {
-    title: string;
-    situation: string;
-    optionA: string;
-    optionB: string;
-    chosen: 'A' | 'B';
-    rationale: string;
-    tradeoff: string;
-    result: string;
+	title: string;
+	situation: string;
+	optionA: string;
+	optionB: string;
+	chosen: 'A' | 'B';
+	rationale: string;
+	tradeoff: string;
+	result: string;
 }
 
 // Interactive architecture flow node
 interface ArchitectureNode {
-    id: string;
-    label: string;          // e.g. "API Layer"
-    icon: string;           // Lucide icon name
-    description: string;    // what this layer does
-    technologies: string[]; // technologies at this layer
-    relatedProjects: string[]; // project names that use this
+	id: string;
+	label: string; // e.g. "API Layer"
+	icon: string; // Lucide icon name
+	description: string; // what this layer does
+	technologies: string[]; // technologies at this layer
+	relatedProjects: string[]; // project names that use this
 }
 
 // Technology linked to evidence
 interface TechnologyEvidence {
-    technology: string;
-    category: 'backend' | 'cloud' | 'frontend' | 'database' | 'devops' | 'integration';
-    usedIn: string[];       // project names
-    whatBuilt: string;      // one-line description of what was built
-    placeholder?: boolean;  // true if skill listed but no project evidence yet
+	technology: string;
+	category: 'backend' | 'cloud' | 'frontend' | 'database' | 'devops' | 'integration';
+	usedIn: string[]; // project names
+	whatBuilt: string; // one-line description of what was built
+	placeholder?: boolean; // true if skill listed but no project evidence yet
 }
 
 // Open source contribution
 interface OpenSourceContribution {
-    project: string;
-    organization: string;
-    url: string;
-    contribution: string;
-    changelogUrl?: string;
+	project: string;
+	organization: string;
+	url: string;
+	contribution: string;
+	changelogUrl?: string;
 }
 
 // Engineering principle with evidence
 interface EngineeringPrinciple {
-    name: string;
-    icon: string;           // Lucide icon name
-    statement: string;
-    evidence: string;       // real example from experience
+	name: string;
+	icon: string; // Lucide icon name
+	statement: string;
+	evidence: string; // real example from experience
 }
 ```
 
@@ -169,11 +169,13 @@ No client-side data fetching. Everything baked at build time.
 ## Extensibility
 
 To add a new project in future:
+
 1. Add entry to `engineeringProjects` array in `pratish.json`
 2. Ensure `slug` is unique — it automatically creates a new `/work/[slug]` route
 3. Run `pnpm build` — `generateStaticParams` picks it up automatically
 
 To add a new technology:
+
 1. Add entry to `technologyEvidence` array
 2. Engineering Depth section renders it automatically
 

@@ -40,7 +40,10 @@ const CertificationsSection = ({
 					</article>
 					<div className='grid gap-4'>
 						{certifications.map((certification) => (
-							<article key={certification.id} className='rounded-xl border border-[color:var(--line)] bg-[color:var(--boulevard-blue)] p-5'>
+							<article
+								key={certification.id}
+								className='rounded-xl border border-[color:var(--line)] bg-[color:var(--boulevard-blue)] p-5'
+							>
 								<p className='mono text-[10px] uppercase tracking-[0.3em] text-[color:var(--accent)]'>{certification.issuer}</p>
 								<h3 className='mt-2 text-lg font-bold text-[var(--ink)]'>{certification.title}</h3>
 								<p className='mono mt-2 text-[10px] tracking-[0.1em] text-[var(--muted-ink)]'>{certification.date}</p>

@@ -16,13 +16,15 @@ const Header = ({ cta }: { cta: CtaLink }) => {
 					<a href='#top' className='mono text-sm tracking-[0.25em] text-[color:var(--accent)]'>
 						PRATISH NINAWE
 					</a>
-					<p className='mono mt-1 hidden text-[10px] tracking-[0.18em] text-[var(--muted-ink)] sm:block'>
-						BACKEND · CLOUD · FULL-STACK
-					</p>
+					<p className='mono mt-1 hidden text-[10px] tracking-[0.18em] text-[var(--muted-ink)] sm:block'>BACKEND · CLOUD · FULL-STACK</p>
 				</div>
 				<nav className='hidden items-center gap-6 md:flex'>
 					{navItems.map((item) => (
-						<a key={item.href} href={item.href} className='mono text-xs tracking-[0.15em] text-[var(--muted-ink)] transition hover:text-[color:var(--accent)]'>
+						<a
+							key={item.href}
+							href={item.href}
+							className='mono text-xs tracking-[0.15em] text-[var(--muted-ink)] transition hover:text-[color:var(--accent)]'
+						>
 							{item.label}
 						</a>
 					))}

@@ -4,19 +4,20 @@ _Created: 2026-09-07_
 
 ## Overview
 
-The portfolio is a statically exported Next.js 15 (App Router) site. All content is baked at build time from a single JSON source. No server runtime, no API routes, no client-side data fetching for core content.
+The portfolio is a statically exported Next.js 15 (App Router) site. All content is baked at build time from a single JSON source. No server runtime,
+no API routes, no client-side data fetching for core content.
 
 ## Stack Decision
 
-| Concern | Choice | Rationale |
-|---------|--------|-----------|
-| Framework | Next.js 15 (App Router) | Already in use; excellent static export, file-based routing, TypeScript-first |
-| Rendering | `output: 'export'` | GitHub Pages compatibility; zero runtime cost |
-| Styling | Tailwind v4 + CSS custom properties | Already configured; Boulevard Ember tokens in `:root` |
-| Animation | Motion (Framer Motion v12) | Already installed; `whileInView` scroll reveals, reduced-motion support |
-| Content | `public/pratish.json` | Single source of truth; typed by TypeScript; baked at build time |
-| Testing | Vitest + jsdom + RTL | Already configured; fast, no browser dependency for unit tests |
-| Deploy | GitHub Actions → gh-pages | Existing CI pipeline; proven |
+| Concern   | Choice                              | Rationale                                                                     |
+| --------- | ----------------------------------- | ----------------------------------------------------------------------------- |
+| Framework | Next.js 15 (App Router)             | Already in use; excellent static export, file-based routing, TypeScript-first |
+| Rendering | `output: 'export'`                  | GitHub Pages compatibility; zero runtime cost                                 |
+| Styling   | Tailwind v4 + CSS custom properties | Already configured; Boulevard Ember tokens in `:root`                         |
+| Animation | Motion (Framer Motion v12)          | Already installed; `whileInView` scroll reveals, reduced-motion support       |
+| Content   | `public/pratish.json`               | Single source of truth; typed by TypeScript; baked at build time              |
+| Testing   | Vitest + jsdom + RTL                | Already configured; fast, no browser dependency for unit tests                |
+| Deploy    | GitHub Actions → gh-pages           | Existing CI pipeline; proven                                                  |
 
 ## Data Flow
 
@@ -76,7 +77,8 @@ docs/
 - No `getServerSideProps`, no `cookies()`, no `headers()` at runtime
 - Dynamic routes (`/work/[slug]`) require `generateStaticParams` — implemented by reading `pratish.json` at build time
 - Images must use `withBasePath()` from `lib/utils.ts` — the `/portfolio` prefix is only added in production
-- `next.config.ts` sets `basePath: '/portfolio'` in production — all internal Next.js `<Link>` and `<Image>` components handle this automatically; only raw `<img src>` and `<a href>` pointing to `public/` assets need `withBasePath()`
+- `next.config.ts` sets `basePath: '/portfolio'` in production — all internal Next.js `<Link>` and `<Image>` components handle this automatically;
+  only raw `<img src>` and `<a href>` pointing to `public/` assets need `withBasePath()`
 
 ## Architecture Flow Component Design
 
@@ -137,6 +139,7 @@ New project pages (`out/work/myalgoai/index.html` etc.) are produced automatical
 ## Dependency Policy
 
 No new npm dependencies. All needs covered by:
+
 - `motion` — animations
 - `lucide-react` — icons
 - `@radix-ui/react-slot` + `class-variance-authority` — button/card primitives

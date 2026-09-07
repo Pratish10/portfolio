@@ -20,7 +20,9 @@ const TechEvidenceCard = ({ evidence }: { evidence: TechnologyEvidence }) => {
 		>
 			<div className='flex items-start justify-between gap-2'>
 				<h4 className='mono text-xs font-medium tracking-[0.06em] text-[var(--ink)]'>{evidence.technology}</h4>
-				<span className='mono shrink-0 text-[9px] uppercase tracking-wider text-[color:var(--accent)]'>{categoryLabels[evidence.category]}</span>
+				<span className='mono shrink-0 text-[9px] uppercase tracking-wider text-[color:var(--accent)]'>
+					{categoryLabels[evidence.category]}
+				</span>
 			</div>
 
 			<p className={`mt-2 text-xs leading-5 ${evidence.placeholder ? 'italic text-[var(--muted-ink)]' : 'text-[var(--muted-ink)]'}`}>
@@ -38,9 +40,7 @@ const TechEvidenceCard = ({ evidence }: { evidence: TechnologyEvidence }) => {
 				</div>
 			)}
 
-			{evidence.placeholder && (
-				<p className='mono mt-2 text-[9px] uppercase tracking-[0.15em] text-[var(--muted-ink)]/40'>skill in progress</p>
-			)}
+			{evidence.placeholder && <p className='mono mt-2 text-[9px] uppercase tracking-[0.15em] text-[var(--muted-ink)]/40'>skill in progress</p>}
 		</article>
 	);
 };

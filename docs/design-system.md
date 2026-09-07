@@ -6,7 +6,8 @@ _Created: 2026-09-07_
 
 **Boulevard Ember** — unchanged. See `docs/design/sunset-boulevard-philosophy.md` for the full manifesto.
 
-Visual language: deep boulevard blue fields, burnt orange/coral/warm sand accents, architectural whitespace, editorial typography. Restrained, clinical, monumental.
+Visual language: deep boulevard blue fields, burnt orange/coral/warm sand accents, architectural whitespace, editorial typography. Restrained,
+clinical, monumental.
 
 This document defines **extensions only**. Do not replace existing tokens.
 
@@ -31,10 +32,10 @@ This document defines **extensions only**. Do not replace existing tokens.
 ### New Additions (add to `app/globals.css` `:root`)
 
 ```css
---signal: #2a9d8f;          /* teal — architecture connectors, evidence links */
+--signal: #2a9d8f; /* teal — architecture connectors, evidence links */
 --signal-muted: rgba(42, 157, 143, 0.2); /* teal at low opacity for node backgrounds */
---code-bg: rgba(27, 49, 58, 0.7);        /* decision comparison boxes, code snippets */
---success: #52b788;         /* green — for "chosen" decision highlight */
+--code-bg: rgba(27, 49, 58, 0.7); /* decision comparison boxes, code snippets */
+--success: #52b788; /* green — for "chosen" decision highlight */
 ```
 
 ---
@@ -48,20 +49,21 @@ This document defines **extensions only**. Do not replace existing tokens.
 
 ### Scale
 
-| Level | Usage | Size |
-|-------|-------|------|
-| Display XL | Hero headline | `text-5xl` / `text-7xl` |
-| Display L | Section headings | `text-3xl` / `text-4xl` |
-| Display M | Project titles, decision titles | `text-2xl` |
-| Body L | Project summaries, decision text | `text-lg` |
-| Body | Standard paragraph | `text-base` |
-| Caption | Eyebrows, badges, labels | `text-xs` uppercase tracking-widest |
+| Level      | Usage                            | Size                                |
+| ---------- | -------------------------------- | ----------------------------------- |
+| Display XL | Hero headline                    | `text-5xl` / `text-7xl`             |
+| Display L  | Section headings                 | `text-3xl` / `text-4xl`             |
+| Display M  | Project titles, decision titles  | `text-2xl`                          |
+| Body L     | Project summaries, decision text | `text-lg`                           |
+| Body       | Standard paragraph               | `text-base`                         |
+| Caption    | Eyebrows, badges, labels         | `text-xs` uppercase tracking-widest |
 
 ---
 
 ## Spacing
 
 Use Tailwind spacing scale. Key reference points:
+
 - Section vertical padding: `py-20` (desktop) / `py-12` (mobile)
 - Content max-width: `max-w-6xl mx-auto px-6`
 - Card internal padding: `p-6` standard, `p-8` for feature cards
@@ -72,11 +74,13 @@ Use Tailwind spacing scale. Key reference points:
 ## Component Patterns
 
 ### Section Heading (existing `section-heading.tsx`)
+
 - Eyebrow: `text-xs uppercase tracking-widest text-[--coral]`
 - Title: `font-display text-3xl/4xl text-[--ink]`
 - Description: `text-[--muted-ink] text-base max-w-2xl`
 
 ### ProjectTeaserCard (new)
+
 - Background: `bg-[--boulevard-deep]/40` with `backdrop-blur-sm`
 - Border: `border border-[--line]`
 - Hover: `border-[--line-strong]` + subtle translate-y lift
@@ -85,6 +89,7 @@ Use Tailwind spacing scale. Key reference points:
 - "Full story →" link: `text-[--signal]` with arrow icon
 
 ### ArchitectureFlow (new)
+
 - Container: centered, max-width constrained
 - Connector lines: `stroke: var(--signal)` SVG lines with subtle animation
 - Node (idle): `bg-[--signal-muted]` border `border-[--signal]/30`
@@ -93,6 +98,7 @@ Use Tailwind spacing scale. Key reference points:
 - Detail panel: `bg-[--code-bg]` border `border-[--line-strong]` slides in
 
 ### TechEvidence (new)
+
 - Tech chip: `bg-[--boulevard-deep] border border-[--line] text-[--ink] text-sm px-3 py-1 rounded`
 - Category label: `text-[--coral] text-xs uppercase`
 - "Used in:" prefix: `text-[--muted-ink] text-xs`
@@ -100,6 +106,7 @@ Use Tailwind spacing scale. Key reference points:
 - Placeholder badge: `text-[--muted-ink] italic` + "skill in progress" label
 
 ### DecisionCard (new)
+
 - Container: `bg-[--code-bg] border border-[--line-strong] rounded-lg p-6`
 - Option A / Option B: two equal columns, `border border-[--line] rounded p-4`
 - Chosen option: `border-[--success] bg-[--success]/10`
@@ -108,12 +115,14 @@ Use Tailwind spacing scale. Key reference points:
 - Trade-off line: `text-[--warm-sand] text-sm`
 
 ### OpenSourceBadge (new)
+
 - Card style: same as ProjectTeaserCard
 - Org name: `text-[--coral] text-xs uppercase`
 - Contribution text: `text-[--ink]`
 - Changelog link: `text-[--signal]`
 
 ### EngineeringPrinciple (new)
+
 - Icon: Lucide icon at `text-[--burnt-orange]`
 - Name: `text-[--ink] font-display text-xl`
 - Statement: `text-[--muted-ink] text-sm`
@@ -126,6 +135,7 @@ Use Tailwind spacing scale. Key reference points:
 All animations use the `motion` library (already installed).
 
 ### Rules
+
 1. All animations respect `prefers-reduced-motion: reduce` — provide `initial/animate` with no movement for reduced motion
 2. No animations on initial page load (avoid CLS)
 3. Scroll-triggered reveals: `whileInView` with `viewport={{ once: true }}`
@@ -133,6 +143,7 @@ All animations use the `motion` library (already installed).
 5. Hover lifts: `whileHover={{ y: -2 }}` — subtle, not dramatic
 
 ### Patterns
+
 ```typescript
 // Scroll reveal (standard)
 initial={{ opacity: 0, y: 16 }}
@@ -155,6 +166,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matc
 ## Icons
 
 Use Lucide React exclusively. Key icons:
+
 - Architecture nodes: `Globe`, `Server`, `Cloud`, `Zap`, `Database`, `Box`
 - Engineering principles: `Shield`, `Layers`, `Eye`, `Wrench`
 - CTAs: `Download`, `Mail`, `Linkedin`, `Github`, `ArrowRight`
@@ -165,13 +177,14 @@ Use Lucide React exclusively. Key icons:
 
 ## Responsive Breakpoints
 
-| Breakpoint | Width | Key changes |
-|------------|-------|------------|
-| Mobile | < 640px | Single column, hamburger nav, full-width CTAs |
-| Tablet | 640–1023px | Two-column starts, nav still condensed |
-| Desktop | ≥ 1024px | Full layout, sticky header, sidebar patterns |
+| Breakpoint | Width      | Key changes                                   |
+| ---------- | ---------- | --------------------------------------------- |
+| Mobile     | < 640px    | Single column, hamburger nav, full-width CTAs |
+| Tablet     | 640–1023px | Two-column starts, nav still condensed        |
+| Desktop    | ≥ 1024px   | Full layout, sticky header, sidebar patterns  |
 
 Grid patterns:
+
 - Hero: `grid-cols-1 lg:grid-cols-[1.2fr_0.8fr]`
 - Projects: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3`
 - Tech evidence: `grid-cols-1 md:grid-cols-2 xl:grid-cols-3`
