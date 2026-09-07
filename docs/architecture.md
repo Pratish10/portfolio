@@ -132,7 +132,7 @@ Tests use Vitest + jsdom + React Testing Library. No browser tests. Tests are gu
 install → lint → lint:fix → format → build → verify out/ → deploy
 ```
 
-The verify step checks `out/pratish.json` and `out/Pratish.webp` exist. These are preserved.
+The verify step checks `out/pratish.json` exist. These are preserved.
 
 New project pages (`out/work/myalgoai/index.html` etc.) are produced automatically by `generateStaticParams` and the Next.js static export.
 

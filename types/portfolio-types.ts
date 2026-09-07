@@ -75,7 +75,6 @@ export interface PortfolioData {
 		location: string;
 		summary: string;
 		availability: string;
-		profileImage: string;
 		resumeLink: string;
 	};
 	cta: {

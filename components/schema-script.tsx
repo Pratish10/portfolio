@@ -10,7 +10,6 @@ export default function SchemaScript() {
 			name: portfolioData.personal.fullName,
 			jobTitle: 'Full Stack Engineer',
 			description: portfolioData.personal.summary,
-			image: 'https://pratish10.github.io/portfolio/Pratish.webp',
 			address: {
 				'@type': 'PostalAddress',
 				addressLocality: 'Bengaluru',

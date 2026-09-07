@@ -24,8 +24,7 @@ Package manager is **pnpm** (lockfile committed; CI uses pnpm).
 - `pnpm vitest run tests/lib/utils.test.ts` — run a single test file
 - `pnpm deploy` — builds and pushes `out/` to `gh-pages` branch
 
-CI (`.github/workflows/deploy.yml`) runs on push to `master`: install → lint → lint:fix → format → build → verify `out/pratish.json` and
-`out/Pratish.webp` exist → deploy. No test step in CI.
+CI (`.github/workflows/deploy.yml`) runs on push to `master`: install → lint → lint:fix → format → build → verify `out/pratish.json` exist → deploy. No test step in CI.
 
 ## Architecture
 

@@ -23,7 +23,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 			title: `${project.name} — ${project.tag}`,
 			description: project.summary,
 			url: `${BASE_URL}/work/${slug}`,
-			images: [{ url: `${BASE_URL}/Pratish.webp`, width: 1200, height: 630 }],
 		},
 	};
 }

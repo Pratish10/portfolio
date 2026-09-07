@@ -21,20 +21,11 @@ export const siteConfig: Metadata = {
 		siteName: portfolioData.personal.fullName,
 		locale: 'en_US',
 		type: 'website',
-		images: [
-			{
-				url: `${BASE_URL}/Pratish.webp`,
-				width: 1200,
-				height: 630,
-				alt: `${portfolioData.personal.fullName} — Backend & Azure Integration Engineer`,
-			},
-		],
 	},
 	twitter: {
 		card: 'summary_large_image',
 		title: portfolioData.seo.title,
 		description: portfolioData.seo.description,
-		images: [`${BASE_URL}/Pratish.webp`],
 	},
 	icons: {
 		icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],

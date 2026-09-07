@@ -73,7 +73,6 @@ _Created: 2026-09-07_
 ### Performance
 
 - Lighthouse Performance score ≥ 85 on desktop
-- Images: `Pratish.webp` already optimized; use `withBasePath()` for all asset links
 - SVG architecture diagram: inline (no external fetch)
 - No heavy third-party scripts
 - Motion animations must not block initial render
@@ -82,7 +81,6 @@ _Created: 2026-09-07_
 
 - `<title>`: "Pratish Ninawe | Full Stack Engineer — Backend, Cloud & Integration"
 - `<meta description>` includes: backend systems, cloud, Node.js, React, APIs
-- OpenGraph image: `Pratish.webp` (1200×630)
 - Twitter card: summary_large_image
 - JSON-LD: Person + ProfilePage schema with updated knowsAbout (include Azure Fundamentals cert, rsvp.kim)
 - Sitemap includes `/work/myalgoai`, `/work/data-monitor`, `/work/qr-dine`
@@ -98,7 +96,7 @@ _Created: 2026-09-07_
 
 - `pnpm lint --max-warnings 0` passes
 - `pnpm test` all suites pass
-- `pnpm build` produces `out/` with `out/pratish.json` and `out/Pratish.webp` present
+- `pnpm build` produces `out/` with `out/pratish.json` present
 - Static export compatible: no runtime-only Next.js features
 - All new routes (`/work/[slug]`) use `generateStaticParams`
 

@@ -31,7 +31,7 @@ is recruiter-facing, built around a single content source (`public/pratish.json`
   Contact
 - **SEO**: `config/site-config.ts` builds Next Metadata; `components/schema-script.tsx` emits JSON-LD
 - **Base path handling**: `withBasePath()` in `lib/utils.ts` handles `/portfolio` prefix for GitHub Pages
-- **CI**: lint → lint:fix → format → build → verify `out/pratish.json` + `out/Pratish.webp` → deploy
+- **CI**: lint → lint:fix → format → build → verify `out/pratish.json` → deploy
 
 ## Current Strengths
 
@@ -78,7 +78,7 @@ is recruiter-facing, built around a single content source (`public/pratish.json`
 
 - Static export: no server-side runtime, no API routes, no `getServerSideProps`
 - GitHub Pages serves from `/portfolio` base path in production — all `public/` asset links must use `withBasePath()`
-- CI verifies `out/pratish.json` and `out/Pratish.webp` exist — do not remove these
+- CI verifies `out/pratish.json` exist — do not remove these
 - No new npm dependencies unless absolutely unavoidable (Motion, Lucide, shadcn/ui already cover needs)
 - `pnpm lint --max-warnings 0` must pass — no ESLint warnings acceptable
 - Tailwind v4: no `tailwind.config` — tokens live in `app/globals.css` as CSS custom properties
