@@ -29,7 +29,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${display.variable} ${body.variable} ${mono.variable} antialiased`}>{children}</body>
+			<body className={`${display.variable} ${body.variable} ${mono.variable} antialiased`}>
+				{children}
+				<script data-goatcounter='https://razor.goatcounter.com/count' async src='//gc.zgo.at/count.js' />
+			</body>
 		</html>
 	);
 }

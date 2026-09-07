@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import VisitorCounter from '@/components/visitor-counter';
 import type { PortfolioData } from '@/types/portfolio-types';
 
 const ContactSection = ({ cta }: { cta: PortfolioData['cta'] }) => {
@@ -37,6 +38,7 @@ const ContactSection = ({ cta }: { cta: PortfolioData['cta'] }) => {
 						</a>
 					</Button>
 				</div>
+				<VisitorCounter />
 			</div>
 		</section>
 	);
