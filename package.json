@@ -3,6 +3,13 @@
 	"version": "0.1.0",
 	"private": true,
 	"homepage": "https://Pratish10.github.io/portfolio",
+	"pnpm": {
+		"allowedBuildScripts": [
+			"@tailwindcss/oxide",
+			"sharp",
+			"unrs-resolver"
+		]
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
