@@ -41,7 +41,7 @@ jobs:
         run: npm i -g pnpm
 
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile --ignore-scripts=false
+        run: pnpm install --no-frozen-lockfile --ignore-scripts
 
       - name: Lint check
         run: pnpm run lint
